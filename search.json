@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Applied Mineralogy and Petrology",
+    "section": "",
+    "text": "This textbook covers the introductory topics for the Mineralogy and Petrology component of EART2231 - Earth Materials, for Semester 1 2023 at the University of Western Australia.\nThe material contained here has been built upon the following coursework notes and handbooks compiled by C.I. Mathison for use with previous Earth Science courses at UWA:\nThis book is a work in progress, and will be continuously updated. Nevertheless, downloads are available via the link at the top left of the page. If you do download a copy of this text, please check the homepage periodically for newer versions. Any comments and suggestions (spotted some typos?) can be added via the built-in tools in the online version, or alternatively you can send me an email."
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "Applied Mineralogy and Petrology",
+    "section": "License",
+    "text": "License\n Applied Mineralogy and Petrology by Jason Bennett and Marco Fiorentini is licensed under CC BY-SA 4.0 \nAdd repository location."
+  },
+  {
+    "objectID": "intro.html#about-this-book",
+    "href": "intro.html#about-this-book",
+    "title": "Preface",
+    "section": "About this book",
+    "text": "About this book\nThis is a book created using Quarto markdown and executable code. It contains many interactive elements and is designed to be read within a browser with an internet connection, however a static version is also available as a pdf or epub format.\nThe online version leverages a few extra features that are not typically found in textbooks. The first of these is a range of embedded interactive elements such as quizzes, interactive plots, and other visualisation tools, made possible through the use of Quarto. These will (mostly) not work in the downloadable formats.\nThe second feature is :Nutshell. Nutshell links are identifiable by their little : (colon) in front of the hyperlink. These links open the target site within the textbook itself, allowing seamless reading without jumping across multiple tabs. They also provide summary snippets and definitions, such as :Mineralogy or :Petrology. These will be used to provide further information, internal references to definitions, or links to other media (such as youtube videos). In the downloadable formats, Nutshell links will render as normal hyperlinks.\nThe third tool is Hypothes.is, which allows you to create public comment and discussion threads about the content on each page. You can also create your own private annotations. This does require an account to use, so it is up to you if you wish to join in or not. The hypothesis toolbar is located at the top-right of the page. It is possible to add public annotations and comments to pdf and epub files via the hypothesis website, however these will not be integrated with comments on the main website. We encourage students to use the online version for use with Hypothesis."
+  },
+  {
+    "objectID": "quick_access/setup.html#correct-use-of-microscopes",
+    "href": "quick_access/setup.html#correct-use-of-microscopes",
+    "title": "Microscope Setup and Use Reminders",
+    "section": "Correct Use of Microscopes",
+    "text": "Correct Use of Microscopes\n\nAt the start of a session\n\nCarefully place the microscope on the bench, directly in front of you, and not placed too far back on the bench.\n\n\n\n\n\n\n\nDo: Always use two hands!\n\n\n\nAlways use two hands when picking up and moving the microscope – one hand on the neck at the back of the microscope, and one hand underneath the base.\n\n\n\n\n\n\n\n\nDon’t: Grab the microcope by the head!\n\n\n\nThe head, stage and turrent of the microscope are not always secure, and are not designed to bear the full weight of the microscope.\n\n\n\nPlug in the power supply box. Make sure the dial is set to low voltage, and then turn it on. Slowly turn up the voltage to sufficient illumination.\n\n\n\n\n\n\n\nHalogen bulbs\n\n\n\nThe light source is a halogen bulb, which is a kind of incandescent light source. As such, bulbs can ‘blow’ with sudden changes in voltage and temperature. Slowly turning up the voltage improves their life span… and makes it much less likely to blow during an exam!\n\n\nBefore you place a slide on the stage, using the lowest power magnification, check the following:\n\nUnder PPL check that the light is uniform with no shadows or obstructions.\nUnder XPL, check that the view is black. Not just a bit grey, and definitely not pink/purple!\n\n\n\nDuring a session\n\nAlways start at the lowest magnification\nChange to higher magnifications by holding the rim of the turret, not via the objective lenses.\nChange through the higher magnification lenses in order, and focus each lens before moving to the next\nPay close attention to the working distance at each magnification, make sure you do not focus the objective lens into the slide.\n\n\n\n\n\n\n\nFocusing at high magnification\n\n\n\nOnly use the fine focus control, particularly with 40x objective lenses or higher. The coarse focus will move the stage too much, and you risk pushing the objective lens through the stage, breaking the slide and damaging the lens.\n\n\n\nAlways switch back to the lowest power objective before removing or changing slides.\nOnly work on one slide at a time, and return the slide to the correct tray or drawer immediately when finished.\n\n\n\n\n\n\n\nNever leave the slide on the stage\n\n\n\nEven if you are only walking away for a few minutes, put the slide away (and turn off the power and put the cover on the microscope). Leaving slides on the microsope stage makes them unavailable to other students, and risks lose and/or damage to the slides if the microscope is packed up accidentally with the side still on the stage.\n\n\n\n\nAt the end of a session\n\nSet the objective lens to the lowest magnification\nRemove the slide, and store it where it belongs.\nTurn down the voltage on the power supply unit, then turn it off.\nPlace the dust cover back on top of the microscope.\nCarefully, using two hands, return the microscope to the cupboard."
+  },
+  {
+    "objectID": "quick_access/setup.html#general-care",
+    "href": "quick_access/setup.html#general-care",
+    "title": "Microscope Setup and Use Reminders",
+    "section": "General Care",
+    "text": "General Care\n\nOperate moving parts gently (such as the stage, turret, analyser, diaphram, etc) and take care not to bump the microscope.\nDo not touch the lens surfaces, and never attempt to clean them (they can be scratched easily). If you suspect your microscope needs care and maintainence, let your instructor know and we can arrange to have it cleaned.\nWash your hands before using the microscope! Not only is this important for the management of repiratory illnesses such as COVID-19, but this helps to keep the microscopes clean and grime free.\nDo not eat or drink at your desk with the microscope out! Water is the only exception. If you want to have a coffee, or an energy drink, walk away from your desk and take 5-10 mins. This is also good for your eyes and posture.\nIf you are not actively using your microscope, turn it OFF and put the cover on! Dust is a menace and gets in there even if you are only gone for 10 mins."
+  },
+  {
+    "objectID": "quick_access/lookup.html#reading-ternary-diagrams",
+    "href": "quick_access/lookup.html#reading-ternary-diagrams",
+    "title": "Useful Tables, Charts, and Diagrams",
+    "section": "Reading Ternary Diagrams",
+    "text": "Reading Ternary Diagrams\n\nimport {ternarySlider} from '@yurivish/ternary-slider'\n\npc = d3.format('.0%')\n\nviewof Composition = ternarySlider({\n    value: [0.3, 0.2, 0.5],\n    labels: ['MgO+FeO', 'Fe2O3', 'SiO2']\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe pointer indicates a composition of:\n\n MgO + FeO,\n Fe2O3,\n SiO2"
+  },
+  {
+    "objectID": "mineralogy.html#crystallography",
+    "href": "mineralogy.html#crystallography",
+    "title": "Introduction to Mineralogy",
+    "section": "Crystallography",
+    "text": "Crystallography\n\n\n\n\n\n\nLearning Outcomes\n\n\n\n\nUnderstand the definition of a mineral, unit cell and crystal lattice\nRecognise symmetry elements\nClassify minerals into one of the 7 crystal systems based on symmetry"
+  },
+  {
+    "objectID": "mineralogy.html#physical-properties-of-minerals",
+    "href": "mineralogy.html#physical-properties-of-minerals",
+    "title": "Introduction to Mineralogy",
+    "section": "Physical Properties of Minerals",
+    "text": "Physical Properties of Minerals\n\n\n\n\n\n\nLearning Outcomes\n\n\n\n\nRevise physical properties of minerals\nPredict physical properties based on crystal structure"
+  },
+  {
+    "objectID": "mineralogy.html#optical-properties-of-minerals",
+    "href": "mineralogy.html#optical-properties-of-minerals",
+    "title": "Introduction to Mineralogy",
+    "section": "Optical Properties of Minerals",
+    "text": "Optical Properties of Minerals\n\n\n\n\n\n\nLearning Outcomes\n\n\n\n\nCorrect use of a petrographic microscope\nDescribe optical properties of minerals in thin section\n\nin Plane Polarised Light\nin Cross Polarised Light\n\nClassify (and identify) minerals observed in thin section"
+  },
+  {
+    "objectID": "mineralogy/crystallography.html",
+    "href": "mineralogy/crystallography.html",
+    "title": "1  Crystallography",
+    "section": "",
+    "text": "1.0.1 The Unit Cell\n2D vs 3D examples\n\n\n1.0.2 Symmetry Elements\nMirror Planes Rotation Axes Center of Inversion\n(Extension: Other elements)\n\n\n1.0.3 Crystal Lattice\nApplication of symmetry elements to the unit cell - build a repeating structure in 2D and 3D\n\n\n1.0.4 The 7 crystal systems\nRecognition based on symmetry\n(Extension: Bravais Lattices)"
+  },
+  {
+    "objectID": "mineralogy/optical.html#plane-polarised-light",
+    "href": "mineralogy/optical.html#plane-polarised-light",
+    "title": "3  Optical properties of minerals",
+    "section": "3.1 Plane Polarised Light",
+    "text": "3.1 Plane Polarised Light\n\n3.1.1 Opacity/Transparency\n\n\n3.1.2 Colour\n\n3.1.2.1 Pleochroism\n\n\n\n3.1.3 Relief\n\n\n3.1.4 Cleavage and Fracture\n\n\n3.1.5 Growth Features\n\n3.1.5.1 Habit\n\n\n3.1.5.2 Zonation"
+  },
+  {
+    "objectID": "mineralogy/optical.html#cross-polarised-light",
+    "href": "mineralogy/optical.html#cross-polarised-light",
+    "title": "3  Optical properties of minerals",
+    "section": "3.2 Cross Polarised Light",
+    "text": "3.2 Cross Polarised Light\n\n3.2.1 Extinction Angles\n\n\n3.2.2 Birefringence\n\n\n3.2.3 Twinning"
+  },
+  {
+    "objectID": "mineralogy/optical.html#further-concepts",
+    "href": "mineralogy/optical.html#further-concepts",
+    "title": "3  Optical properties of minerals",
+    "section": "3.3 Further concepts",
+    "text": "3.3 Further concepts\nThere are further techniques not covered here, such as obtaining an :optic figure and measuring the corresponding optic angle (or 2V). It is sufficient at this stage to know that they exist – we will cover this technique in a later course. There are also a few other concepts that the beginning microscopist should be aware of. These are covered in this section.\n\n3.3.1 Colour perception\nWe all see the world differently, and this should not be a disadvantage when it comes to microscopy. Due to the different physical interaction properties of light between dyes and inks, LED/LCD computer screens, camera detectors, and how interference colours arise, it is not suprising that dramatic differences in perception of colours often arise between depictions of what is seen down the microscope versus what is actually observed, even in individuals with full colour perception.\nFigure Figure 3.1 is an :Ishihara colour perception plate. This is not a faithful reconstruction (due to colour rendering in various digital display technologies) but it is sufficient to illustrate the point here. You should be able to distinguish the number 74. If you see the number 71, or no number at all, then please alert your demonstrator so that we can help provide you with some extra materials and assistance. For instance, instead of using digitally rendered or print copied of the Michel Levy chart, we will provide you with a quartz wedge plate which can be viewed under cross polarised light to use as the true point of reference for the interference colours.\n\n\n\nFigure 3.1: Ishihara Plate 9. The number 74 should be visible - please alert your demonstrator if you see the number 71 or no number at all.\n\n\n\n\n3.3.2 Sources of Light\nAn important effect to take note of is how the generation of interference colours under cross polarised light is also a function of the spectral distribution of light interacting with the crystalline material. For the interference colours to behave as we expect them to as a function of birefringence, it is important to use an even a distribution of light as possible.\nModern :LEDs do not produce a uniform or continuous spectral distribution. Even the Nobel Prize winning blue LED and its subsequent combination with Ce-doped :YAG as a yellow phosphor still does not produce a sufficiently uniform spectrum suitable for XPL microscopy.\nAs such, our microscopes are equipped with :halogen bulbs, a modification to the standard tungsten-filament incandescent bulbs of the 20th Century. Yes, it’s old-tech, but it’s what we have. Notice in Figure Figure 3.2 that the light emitted from these bulbs is still skewed towards the yellow-red side of the spectrum. The microscopes compensate for this by filtering some of the yellow-red light to even out the distribution a little and make the general spectrum more ‘white’.\nThe key message is that the bulbs in your microscopes will produce a significant amount of infrared radiation (i.e., heat). Don’t leave them on for long periods unattended. When turning them on and off, it is best to start at low voltage and ramp it up slowly (over a couple of seconds) rather than just turn it on at full voltage. This increases wear on the bulbs, and makes them more likely to blow (which is not good if it happens during an exam).\n\n\n\n\nviewof TempK = Inputs.range(\n  [1500, 10000], \n  {value: 1700, step: 100, label: \"Temperature (K):\"}\n)\n\n\n\n\n\n\n\ndata = FileAttachment(\"bb_spectra.csv\").csv({ typed: true })\n\n\n\n\n\n\n\nPlot.plot({\n  x: {label: \"Wavelength (nm)\"},\n  y: {\n    label: \"Relative Intensity\",\n    labelOffset: 0},\n  margin: 40,\n  marginBottom: 80,\n  style: {\n    background: \"#CCCCCC\",\n    fontSize: 20,\n    color: \"Black\"\n  },\n  marks: [\n    Plot.image([{ url: \"https://upload.wikimedia.org/wikipedia/commons/d/d9/Linear_visible_spectrum.svg\"}],\n    {\n      x: 565,\n      y: -0.2,\n      width: 383,\n      height: width*0.1,\n      src: \"url\"\n    }),\n    //Plot.ruleX([380]),\n    //Plot.ruleX([750]),\n    Plot.areaY(filtered, { \n      x: \"wavelength\", \n      y: \"value\", \n      fill: \"#888888\" })\n      \n      ],\n  width: 800\n})\n\n\n\n\n\nFigure 3.2: Relative spectral distribution of emissions for Black Body Radiation at a given Temperature. Compare the spectral output for a Halogen bulb at 3000K vs Daylight at 6500K\n\n\n\n\nfiltered = data.filter(function(bbspectra) {\n  return TempK == bbspectra.temperature;\n})"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Appendix A — Resources",
+    "section": "",
+    "text": "Resources, such as other texts, etc."
+  }
+]

@@ -60,5 +60,8 @@ format:
  
 server: shiny
 
+execute: 
+  freeze: auto
+
 
 

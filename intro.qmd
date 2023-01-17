@@ -1,0 +1,13 @@
+# Preface {.unnumbered}
+
+## About this book {.unnumbered}
+This is a book created using [Quarto](https://quarto.org) markdown and executable code. It contains many interactive elements and is designed to be read within a browser with an internet connection, however a static version is also available as a pdf or epub format.
+
+The online version leverages a few extra features that are not typically found in textbooks. The first of these is a range of embedded interactive elements such as quizzes, interactive plots, and other visualisation tools, made possible through the use of Quarto. These will (mostly) not work in the downloadable formats. 
+
+The second feature is [:Nutshell](https://ncase.me/nutshell/). Nutshell links are identifiable by their little : (colon) in front of the hyperlink. These links open the target site within the textbook itself, allowing seamless reading without jumping across multiple tabs. They also provide summary snippets and definitions, such as [:Mineralogy](https://en.wikipedia.org/wiki/Mineralogy) or [:Petrology](https://en.wikipedia.org/wiki/Petrology). These will be used to provide further information, internal references to definitions, or links to other media (such as youtube videos). In the downloadable formats, Nutshell links will render as normal hyperlinks.
+
+The third tool is [Hypothes.is](https://web.hypothes.is/), which allows you to create public comment and discussion threads about the content on each page. You can also create your own private annotations. This does require an account to use, so it is up to you if you wish to join in or not. The hypothesis toolbar is located at the top-right of the page. It is possible to add public annotations and comments to pdf and epub files via the hypothesis website, however these will not be integrated with comments on the main website. We encourage students to use the online version for use with Hypothesis. 
+
+<!-- The final tool is [Utteranc.es](https://utteranc.es/), which allows you to log any issues or typos through github. Much of this could also be captured via Hypothesis, but we encourage users to keep hypothesis for comments and discussion on the topics at hand, and use Utterances for any issues which need *fixing*. -->
+

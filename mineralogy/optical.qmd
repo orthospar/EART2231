@@ -1,0 +1,148 @@
+
+# Optical properties of minerals
+
+## Plane Polarised Light
+
+### Opacity/Transparency
+
+### Colour
+
+#### Pleochroism
+
+### Relief
+
+### Cleavage and Fracture
+ 
+### Growth Features
+
+#### Habit
+
+#### Zonation
+
+## Cross Polarised Light
+
+### Extinction Angles
+
+### Birefringence
+
+### Twinning
+
+
+## Further concepts
+
+There are further techniques not covered here, such as obtaining an [:optic figure](https://en.wikipedia.org/wiki/Conoscopic_interference_pattern) and measuring the corresponding optic angle (or 2V). It is sufficient at this stage to know that they *exist* -- we will cover this technique in a later course. There are also a few other concepts that the beginning microscopist should be aware of. These are covered in this section.
+
+### Colour perception
+
+We all see the world differently, and this should not be a disadvantage when it comes to microscopy. Due to the different physical interaction properties of light between dyes and inks, LED/LCD computer screens, camera detectors, and how interference colours arise, it is not suprising that dramatic differences in perception of colours often arise between depictions of what is seen down the microscope versus what is actually observed, even in individuals with full colour perception. 
+
+Figure @fig-ishihara9 is an [:Ishihara]() colour perception plate. This is not a faithful reconstruction (due to colour rendering in various digital display technologies) but it is sufficient to illustrate the point here. You should be able to distinguish the number 74. If you see the number 71, or no number at all, then please alert your demonstrator so that we can help provide you with some extra materials and assistance. For instance, instead of using digitally rendered or print copied of the Michel Levy chart, we will provide you with a quartz wedge plate which can be viewed under cross polarised light to use as the true point of reference for the interference colours. 
+
+[![Ishihara Plate 9. The number 74 should be visible - please alert your demonstrator if you see the number 71 or no number at all.](Ishihara_9.svg "Ishihara Plate 9"){#fig-ishihara9}]("https://commons.wikimedia.org/wiki/File:Ishihara_9.svg")
+
+### Sources of Light
+
+An important effect to take note of is how the generation of interference colours under cross polarised light is also a function of the spectral distribution of light interacting with the crystalline material. For the interference colours to behave as we expect them to as a function of birefringence, it is important to use an even a distribution of light as possible. 
+
+Modern [:LEDs](https://en.wikipedia.org/wiki/Light-emitting_diode) do not produce a uniform or continuous spectral distribution. Even the [Nobel Prize](https://www.nobelprize.org/prizes/physics/2014/press-release/) winning blue LED and its subsequent combination with Ce-doped [:YAG](https://en.wikipedia.org/wiki/Yttrium_aluminium_garnet) as a yellow phosphor still does not produce a sufficiently uniform spectrum suitable for XPL microscopy. 
+
+As such, our microscopes are equipped with [:halogen bulbs](https://en.wikipedia.org/wiki/Halogen_lamp), a modification to the standard tungsten-filament incandescent bulbs of the 20th Century. Yes, it's old-tech, but it's what we have. Notice in Figure @fig-bb_spectra that the light emitted from these bulbs is still skewed towards the yellow-red side of the spectrum. The microscopes compensate for this by filtering some of the yellow-red light to even out the distribution a little and make the general spectrum more 'white'.
+
+The key message is that the bulbs in your microscopes will produce a significant amount of infrared radiation (i.e., ***heat***). Don't leave them on for long periods unattended. When turning them on and off, it is best to start at low voltage and ramp it up slowly (over a couple of seconds) rather than just turn it on at full voltage. This increases wear on the bulbs, and makes them more likely to blow (which is not good if it happens during an exam).
+
+```{r, echo=FALSE, message=FALSE}
+library(reshape)
+library(readr)
+library(dplyr)
+
+bb <- function(lambda, TK){
+     #Planck's law of black-body radiation, where:
+     #lambda = wavelength (nm)
+     #TK = temperature in Kelvin
+      
+     #convert temp from nm to m
+     lambda <- lambda*1e-9
+     
+     #Constants:
+     c <- 299792458 #speed of light (m/s), SI units
+     h <- 6.626e-34 #plank constant (J/Hz), SI units
+     k <- 1.38e-23 #boltzmann constant (J/K), SI units 
+    
+     radiance <- ((2*h*c^2)/(lambda^5))*(1/(exp((h*c)/(lambda*k*TK))-1))
+     return(radiance)
+}
+
+
+# build csv file for plotting in ojs
+TK_range <- seq(1500,10000,100)
+lambda_range <- seq(200,900,10)
+
+bb_spectra <- data.frame(outer(lambda_range, TK_range, bb))
+colnames(bb_spectra) <- c(TK_range)
+bb_spectra <- bind_cols(data.frame(wavelength=lambda_range), bb_spectra)%>%
+  melt(id="wavelength")%>%
+  dplyr::rename(temperature = variable)%>%
+  group_by(temperature)%>%
+  mutate(value=(value/max(value)))
+
+write.csv(bb_spectra, "bb_spectra.csv")
+
+```
+
+
+
+```{ojs}
+//| panel: input
+viewof TempK = Inputs.range(
+  [1500, 10000], 
+  {value: 1700, step: 100, label: "Temperature (K):"}
+)
+```
+```{ojs}
+data = FileAttachment("bb_spectra.csv").csv({ typed: true })
+```
+
+```{ojs}
+//| label: fig-bb_spectra
+//| fig-cap: "Relative spectral distribution of emissions for Black Body Radiation at a given Temperature. Compare the spectral output for a Halogen bulb at 3000K vs Daylight at 6500K"
+
+Plot.plot({
+  x: {label: "Wavelength (nm)"},
+  y: {
+    label: "Relative Intensity",
+    labelOffset: 0},
+  margin: 40,
+  marginBottom: 80,
+  style: {
+    background: "#CCCCCC",
+    fontSize: 20,
+    color: "Black"
+  },
+  marks: [
+    Plot.image([{ url: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Linear_visible_spectrum.svg"}],
+    {
+      x: 565,
+      y: -0.2,
+      width: 383,
+      height: width*0.1,
+      src: "url"
+    }),
+    //Plot.ruleX([380]),
+    //Plot.ruleX([750]),
+    Plot.areaY(filtered, { 
+      x: "wavelength", 
+      y: "value", 
+      fill: "#888888" })
+      
+      ],
+  width: 800
+})
+
+```
+
+```{ojs}
+filtered = data.filter(function(bbspectra) {
+  return TempK == bbspectra.temperature;
+})
+```
+

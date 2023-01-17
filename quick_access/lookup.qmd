@@ -1,0 +1,28 @@
+# Useful Tables, Charts, and Diagrams {.unnumbered}
+
+::: {.callout-tip}
+## How to use
+Full descriptions of how to *use* this material (and what it means) will be provided in later sections, please follow the relevant links if you need to refresh your memory. 
+:::
+
+
+## Reading Ternary Diagrams
+
+
+
+```{ojs}
+import {ternarySlider} from '@yurivish/ternary-slider'
+
+pc = d3.format('.0%')
+
+viewof Composition = ternarySlider({
+    value: [0.3, 0.2, 0.5],
+    labels: ['MgO+FeO', 'Fe2O3', 'SiO2']
+})
+```
+
+The pointer indicates a composition of:
+
+- ${pc(Composition[0])} MgO + FeO,
+- ${pc(Composition[1])} Fe~2~O~3~, 
+- ${pc(Composition[2])}  SiO~2~

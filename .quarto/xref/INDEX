@@ -1,0 +1,59 @@
+{
+  "index.qmd": {
+    "index.html": "bb059dd1"
+  },
+  "intro.qmd": {
+    "intro.html": "7b35fb34"
+  },
+  "summary.qmd": {
+    "summary.html": "c3e44545"
+  },
+  "references.qmd": {
+    "references.html": "7bbc51ed"
+  },
+  "mineralogy.qmd": {
+    "mineralogy.html": "26f127dd"
+  },
+  "petrology.qmd": {
+    "petrology.html": "67633d2d"
+  },
+  "setup.qmd": {
+    "setup.html": "54928208"
+  },
+  "quick_access.qmd": {
+    "quick_access.html": "71a9f45a"
+  },
+  "quick_access/setup.qmd": {
+    "setup.html": "251ed710"
+  },
+  "quick_access/lookup.qmd": {
+    "lookup.html": "29292f39"
+  },
+  "quick_access/process.qmd": {
+    "process.html": "df0efcaf"
+  },
+  "mineralogy/crystallography.qmd": {
+    "crystallography.html": "1898cef7"
+  },
+  "mineralogy/physical.qmd": {
+    "physical.html": "55e1c0ca"
+  },
+  "mineralogy/optical.qmd": {
+    "optical.html": "55afb49e"
+  },
+  "petrology/description.qmd": {
+    "description.html": "d690792a"
+  },
+  "petrology/classification.qmd": {
+    "classification.html": "dd8c1029"
+  },
+  "petrology/phase_diagrams.qmd": {
+    "phase_diagrams.html": "61a0247b"
+  },
+  "petrology/processes.qmd": {
+    "processes.html": "bbbb7eda"
+  },
+  "resources.qmd": {
+    "resources.html": "3e63e730"
+  }
+}

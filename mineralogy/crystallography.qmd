@@ -1,0 +1,23 @@
+# Crystallography
+
+### The Unit Cell
+
+2D vs 3D examples
+
+### Symmetry Elements
+
+Mirror Planes
+Rotation Axes
+Center of Inversion
+
+(Extension: Other elements)
+
+### Crystal Lattice
+
+Application of symmetry elements to the unit cell - build a repeating structure in 2D and 3D
+
+### The 7 crystal systems
+
+Recognition based on symmetry
+
+(Extension: Bravais Lattices)

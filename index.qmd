@@ -19,5 +19,5 @@ The material contained here has been built upon the following coursework notes a
 
 # Downloads
 This book is a work in progress, and will be continuously updated. Nevertheless, downloads are available via the link at the top left of the page. 
-If you do download a copy of this text, please check the [homepage]() periodically for newer versions. Any comments and suggestions (spotted some typos?) can be added via the built-in tools in the online version, or alternatively you can [send me an email.](mailto:jason.bennett@uwa.edu.au)
+If you do download a copy of this text, please check the [homepage](https://orthospar.github.io/AppMinPet/) periodically for newer versions. Any comments and suggestions (spotted some typos?) can be added via the built-in tools in the online version, or alternatively you can [send me an email.](mailto:jason.bennett@uwa.edu.au)
 

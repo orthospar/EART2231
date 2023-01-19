@@ -17,13 +17,93 @@
 
 #### Habit
 
+
 #### Zonation
 
 ## Cross Polarised Light
 
-### Extinction Angles
+<!-- ```{r, echo=FALSE, message=FALSE} -->
+<!-- library(dplyr) -->
+<!-- library(ggplot2) -->
+
+<!-- c <- 299792458 #speed of light (m/s), SI units -->
+
+<!-- d <- data.frame(wavelength=c(380:750))%>% #wavelength in nm -->
+<!--           mutate(freq = (c/(wavelength*1e-9))/1e12) #calculate frequency and express in THz -->
+<!-- wave <- function(freq, time, phi){ -->
+<!--   y <- sin(2*pi*freq*time + phi) -->
+<!--   return(y) -->
+<!-- } -->
+
+<!-- temp <- data.frame(time = c(0:5*pi)) -->
+
+
+<!-- p <- ggplot(temp, aes(x=time))+ -->
+<!--   geom_function(fun = ~sin(2*pi*500*.x)) -->
+
+<!-- print(p) -->
+
+<!-- ``` -->
+
+<!-- ```{ojs} -->
+<!-- //| panel: input -->
+<!-- viewof R = Inputs.range( -->
+<!--   [1500, 10000], -->
+<!--   {value: 1700, step: 100, label: "Temperature (K):"} -->
+<!-- ) -->
+<!-- ``` -->
+<!-- ```{ojs} -->
+<!-- data = FileAttachment("bb_spectra.csv").csv({ typed: true }) -->
+<!-- ``` -->
+
+<!-- ```{ojs} -->
+<!-- //| label: fig-bb_spectra -->
+<!-- //| fig-cap: "Relative spectral distribution of emissions for Black Body Radiation at a given Temperature. Compare the spectral output for a Halogen bulb at 3000K vs Daylight at 6500K" -->
+
+<!-- Plot.plot({ -->
+<!--   x: {label: "Wavelength (nm)"}, -->
+<!--   y: { -->
+<!--     label: "Relative Intensity", -->
+<!--     labelOffset: 0}, -->
+<!--   margin: 40, -->
+<!--   marginBottom: 80, -->
+<!--   style: { -->
+<!--     background: "#CCCCCC", -->
+<!--     fontSize: 20, -->
+<!--     color: "Black" -->
+<!--   }, -->
+<!--   marks: [ -->
+<!--     Plot.image([{ url: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Linear_visible_spectrum.svg"}], -->
+<!--     { -->
+<!--       x: 565, -->
+<!--       y: -0.2, -->
+<!--       width: 383, -->
+<!--       height: width*0.1, -->
+<!--       src: "url" -->
+<!--     }), -->
+<!--     //Plot.ruleX([380]), -->
+<!--     //Plot.ruleX([750]), -->
+<!--     Plot.areaY(filtered, { -->
+<!--       x: "wavelength", -->
+<!--       y: "value", -->
+<!--       fill: "#888888" }) -->
+
+<!--       ], -->
+<!--   width: 800 -->
+<!-- }) -->
+
+<!-- ``` -->
+
+<!-- ```{ojs} -->
+<!-- filtered = data.filter(function(bbspectra) { -->
+<!--   return TempK == bbspectra.temperature; -->
+<!-- }) -->
+<!-- ``` -->
+
 
 ### Birefringence
+
+### Extinction Angles
 
 ### Twinning
 
@@ -54,6 +134,7 @@ The key message is that the bulbs in your microscopes will produce a significant
 library(reshape)
 library(readr)
 library(dplyr)
+library(pavo)
 
 bb <- function(lambda, TK){
      #Planck's law of black-body radiation, where:
@@ -72,18 +153,34 @@ bb <- function(lambda, TK){
      return(radiance)
 }
 
+#function to normalise the spectra to range 0:1
+norm_func <- function(x){
+    x<-x/max(x)
+    return(x)
+    }
+
+# calculate spectra
+TK_range <- seq(1500,10000,100)
+lambda_range <- seq(200,900)
+
+bb_spectra <- data.frame(outer(lambda_range, TK_range, bb))%>%
+  transmute(across(everything(), norm_func))
+colnames(bb_spectra) <- c(TK_range)
+bb_spectra <- bind_cols(data.frame(wl=lambda_range), bb_spectra)
+
+# calculate rgb spectral perception
+bb_rspec <- as.rspec(bb_spectra, lim = c(300, 700))
+bb_colours <- spec2rgb(bb_rspec, alpha=NULL)
+bb_colours <- tibble::rownames_to_column(as.data.frame(bb_colours))
+colnames(bb_colours) <- c("temperature", "hexvis")
+
 
 # build csv file for plotting in ojs
-TK_range <- seq(1500,10000,100)
-lambda_range <- seq(200,900,10)
-
-bb_spectra <- data.frame(outer(lambda_range, TK_range, bb))
-colnames(bb_spectra) <- c(TK_range)
-bb_spectra <- bind_cols(data.frame(wavelength=lambda_range), bb_spectra)%>%
-  melt(id="wavelength")%>%
+bb_spectra <- melt(bb_spectra, id="wl")%>%
   dplyr::rename(temperature = variable)%>%
   group_by(temperature)%>%
-  mutate(value=(value/max(value)))
+  mutate(value=(value/max(value)))%>%
+  left_join(bb_colours, by="temperature")
 
 write.csv(bb_spectra, "bb_spectra.csv")
 
@@ -99,12 +196,13 @@ viewof TempK = Inputs.range(
 )
 ```
 ```{ojs}
-data = FileAttachment("bb_spectra.csv").csv({ typed: true })
+data_bbspec = FileAttachment("bb_spectra.csv").csv({ typed: true })
+//data_colours = FileAttachment("bb_colours.csv").csv({ typed: true })
 ```
 
 ```{ojs}
 //| label: fig-bb_spectra
-//| fig-cap: "Relative spectral distribution of emissions for Black Body Radiation at a given Temperature. Compare the spectral output for a Halogen bulb at 3000K vs Daylight at 6500K"
+//| fig-cap: "Relative spectral distribution of emissions for Black Body Radiation at a given Temperature. The display colour of the curve approximates the perceived colour of this spectrum by the human eye. Compare the spectral output for a Halogen bulb at 3000K vs Daylight at 6500K"
 
 Plot.plot({
   x: {label: "Wavelength (nm)"},
@@ -130,9 +228,9 @@ Plot.plot({
     //Plot.ruleX([380]),
     //Plot.ruleX([750]),
     Plot.areaY(filtered, { 
-      x: "wavelength", 
+      x: "wl", 
       y: "value", 
-      fill: "#888888" })
+      fill: "hexvis"})
       
       ],
   width: 800
@@ -141,8 +239,11 @@ Plot.plot({
 ```
 
 ```{ojs}
-filtered = data.filter(function(bbspectra) {
+filtered = data_bbspec.filter(function(bbspectra) {
   return TempK == bbspectra.temperature;
 })
+//colour_vis = data_colours.filter(function(bbcolour) {
+//  return TempK == bbcolour.temperature;
+//})
 ```
 

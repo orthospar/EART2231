@@ -3,7 +3,7 @@ project:
 
 book:
   title: "Applied Mineralogy and Petrology"
-  subtitle: "An introduction to some core concepts of mineralogical and petrological principles"
+  subtitle: "A Lab Manual for EART2231 at the University of Western Australia"
   output-file: "EART2231_IntroMinPet"
   author: ["Jason Bennett", "Marco Fiorentini"]
   search: true
@@ -54,9 +54,9 @@ format:
     theme:
       light: flatly
       dark: darkly
-  # pdf:
-  #   documentclass: scrreprt
-  # epub: default
+  pdf:
+     documentclass: scrreprt
+  epub: default
  
 server: shiny
 

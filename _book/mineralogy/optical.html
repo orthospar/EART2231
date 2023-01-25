@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.280">
+<meta name="generator" content="quarto-1.3.124">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -218,7 +218,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../mineralogy.html" class="sidebar-item-text sidebar-link">Introduction to Mineralogy</a>
+            <a href="../mineralogy.html" class="sidebar-item-text sidebar-link">Mineralogy</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -342,6 +342,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
+<p>We recommend the open access textbook <a href="http://www.minsocam.org/msa/OpenAccess_publications/Guide_Thin_Sctn_Mcrscpy_index.html">“Guide to Thin Section Microscopy”</a> by Raith, Raase, and Reinhardt (2012) for ongoing use as a detailed reference companion. This textbook is worth getting printed and bound by a high quality professional printing service.</p>
 <section id="plane-polarised-light" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="plane-polarised-light"><span class="header-section-number">3.1</span> Plane Polarised Light</h2>
 <section id="opacitytransparency" class="level3" data-number="3.1.1">
@@ -371,72 +372,74 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="cross-polarised-light" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="cross-polarised-light"><span class="header-section-number">3.2</span> Cross Polarised Light</h2>
-<!-- ```{r, echo=FALSE, message=FALSE} -->
-<!-- library(dplyr) -->
-<!-- library(ggplot2) -->
-<!-- c <- 299792458 #speed of light (m/s), SI units -->
-<!-- d <- data.frame(wavelength=c(380:750))%>% #wavelength in nm -->
-<!--           mutate(freq = (c/(wavelength*1e-9))/1e12) #calculate frequency and express in THz -->
-<!-- wave <- function(freq, time, phi){ -->
-<!--   y <- sin(2*pi*freq*time + phi) -->
-<!--   return(y) -->
-<!-- } -->
-<!-- temp <- data.frame(time = c(0:5*pi)) -->
-<!-- p <- ggplot(temp, aes(x=time))+ -->
-<!--   geom_function(fun = ~sin(2*pi*500*.x)) -->
-<!-- print(p) -->
-<!-- ``` -->
-<!-- ```{ojs} -->
-<!-- //| panel: input -->
-<!-- viewof R = Inputs.range( -->
-<!--   [1500, 10000], -->
-<!--   {value: 1700, step: 100, label: "Temperature (K):"} -->
-<!-- ) -->
-<!-- ``` -->
-<!-- ```{ojs} -->
-<!-- data = FileAttachment("bb_spectra.csv").csv({ typed: true }) -->
-<!-- ``` -->
-<!-- ```{ojs} -->
-<!-- //| label: fig-bb_spectra -->
-<!-- //| fig-cap: "Relative spectral distribution of emissions for Black Body Radiation at a given Temperature. Compare the spectral output for a Halogen bulb at 3000K vs Daylight at 6500K" -->
-<!-- Plot.plot({ -->
-<!--   x: {label: "Wavelength (nm)"}, -->
-<!--   y: { -->
-<!--     label: "Relative Intensity", -->
-<!--     labelOffset: 0}, -->
-<!--   margin: 40, -->
-<!--   marginBottom: 80, -->
-<!--   style: { -->
-<!--     background: "#CCCCCC", -->
-<!--     fontSize: 20, -->
-<!--     color: "Black" -->
-<!--   }, -->
-<!--   marks: [ -->
-<!--     Plot.image([{ url: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Linear_visible_spectrum.svg"}], -->
-<!--     { -->
-<!--       x: 565, -->
-<!--       y: -0.2, -->
-<!--       width: 383, -->
-<!--       height: width*0.1, -->
-<!--       src: "url" -->
-<!--     }), -->
-<!--     //Plot.ruleX([380]), -->
-<!--     //Plot.ruleX([750]), -->
-<!--     Plot.areaY(filtered, { -->
-<!--       x: "wavelength", -->
-<!--       y: "value", -->
-<!--       fill: "#888888" }) -->
-<!--       ], -->
-<!--   width: 800 -->
-<!-- }) -->
-<!-- ``` -->
-<!-- ```{ojs} -->
-<!-- filtered = data.filter(function(bbspectra) { -->
-<!--   return TempK == bbspectra.temperature; -->
-<!-- }) -->
-<!-- ``` -->
+<p>The upper polarisation plate (the anlyser) is oriented perpendicular to the orienation direction of the lower polarisation plate. Since the lower polariser is, by convention, orientated in an E-W direction (or left-right), the upper polariser is hence oriented in a N-S direction (or up-down). If no thin section is inserted, then the view through the oculars should be <strong>dark/black</strong>.</p>
 <section id="birefringence" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="birefringence"><span class="header-section-number">3.2.1</span> Birefringence</h3>
+<p>Upon insertion of the upper polarisation plate (the analyser) the most striking observation is the sudden bright colourful display of <a href="https://en.wikipedia.org/wiki/Interference_colour_chart">:Interference Colours</a>, particularly in minerals such as olivine. Interference colours are only visible in <em>anisotropic minerals</em> arise as a function of thin section thickness and the <a href="https://en.wikipedia.org/wiki/Birefringence">:Birefringence</a> of the mineral.</p>
+<div class="cell">
+
+</div>
+<div class="cell panel-input card bg-light p-2">
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="79" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 78;"><span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>viewof biref <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>(</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>  [<span class="fl">0.0005</span><span class="op">,</span> <span class="fl">0.14</span>]<span class="op">,</span> </span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.0005</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Birefringence:"</span>}</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="86" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 85;"><span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>data_intspec <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"int_spectra.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="92" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 91;"><span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Wavelength (nm)"</span>}<span class="op">,</span></span>
+<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {</span>
+<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a>    <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span><span class="dv">1</span>]<span class="op">,</span></span>
+<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Relative Intensity"</span><span class="op">,</span></span>
+<span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a>    <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">0</span>}<span class="op">,</span></span>
+<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a>  <span class="dt">margin</span><span class="op">:</span> <span class="dv">40</span><span class="op">,</span></span>
+<span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">80</span><span class="op">,</span></span>
+<span id="cb3-100"><a href="#cb3-100" aria-hidden="true" tabindex="-1"></a>  <span class="dt">style</span><span class="op">:</span> {</span>
+<span id="cb3-101"><a href="#cb3-101" aria-hidden="true" tabindex="-1"></a>    <span class="dt">background</span><span class="op">:</span> <span class="st">"#CCCCCC"</span><span class="op">,</span></span>
+<span id="cb3-102"><a href="#cb3-102" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
+<span id="cb3-103"><a href="#cb3-103" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"Black"</span></span>
+<span id="cb3-104"><a href="#cb3-104" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb3-105"><a href="#cb3-105" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb3-106"><a href="#cb3-106" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">areaY</span>(interference_filtered<span class="op">,</span> { </span>
+<span id="cb3-107"><a href="#cb3-107" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"wl"</span><span class="op">,</span> </span>
+<span id="cb3-108"><a href="#cb3-108" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> </span>
+<span id="cb3-109"><a href="#cb3-109" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"hexvis"</span>})</span>
+<span id="cb3-110"><a href="#cb3-110" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb3-111"><a href="#cb3-111" aria-hidden="true" tabindex="-1"></a>      ]<span class="op">,</span></span>
+<span id="cb3-112"><a href="#cb3-112" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span></span>
+<span id="cb3-113"><a href="#cb3-113" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-int_spectra" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div id="ojs-cell-3" data-nodetype="expression">
+
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.1: Spectral contribution to the observed interference colour as a function of birefringence. Assumes a uniform light source (even spectral distribution). The orders of colours can be counted as the first trough passed by 550 nm. Higher order colours (after 3rd order) oscillate between weak pink-green colours and become increasingly white.</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="119" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 118;"><span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a>interference_filtered <span class="op">=</span> data_intspec<span class="op">.</span><span class="fu">filter</span>(<span class="kw">function</span>(intspectra) {</span>
+<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> biref <span class="op">==</span> intspectra<span class="op">.</span><span class="at">biref</span><span class="op">;</span></span>
+<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
 </section>
 <section id="extinction-angles" class="level3" data-number="3.2.2">
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="extinction-angles"><span class="header-section-number">3.2.2</span> Extinction Angles</h3>
@@ -451,11 +454,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="colour-perception" class="level3" data-number="3.3.1">
 <h3 data-number="3.3.1" class="anchored" data-anchor-id="colour-perception"><span class="header-section-number">3.3.1</span> Colour perception</h3>
 <p>We all see the world differently, and this should not be a disadvantage when it comes to microscopy. Due to the different physical interaction properties of light between dyes and inks, LED/LCD computer screens, camera detectors, and how interference colours arise, it is not suprising that dramatic differences in perception of colours often arise between depictions of what is seen down the microscope versus what is actually observed, even in individuals with full colour perception.</p>
-<p>Figure <a href="#fig-ishihara9">Figure&nbsp;<span>3.1</span></a> is an <a href="">:Ishihara</a> colour perception plate. This is not a faithful reconstruction (due to colour rendering in various digital display technologies) but it is sufficient to illustrate the point here. You should be able to distinguish the number 74. If you see the number 71, or no number at all, then please alert your demonstrator so that we can help provide you with some extra materials and assistance. For instance, instead of using digitally rendered or print copied of the Michel Levy chart, we will provide you with a quartz wedge plate which can be viewed under cross polarised light to use as the true point of reference for the interference colours.</p>
+<p>Figure <a href="#fig-ishihara9">Figure&nbsp;<span>3.2</span></a> is an <a href="">:Ishihara</a> colour perception plate. This is not a faithful reconstruction (due to colour rendering in various digital display technologies) but it is sufficient to illustrate the point here. You should be able to distinguish the number 74. If you see the number 71, or no number at all, then please alert your demonstrator so that we can help provide you with some extra materials and assistance. For instance, instead of using digitally rendered or print copied of the Michel Levy chart, we will provide you with a quartz wedge plate which can be viewed under cross polarised light to use as the true point of reference for the interference colours.</p>
 <div id="fig-ishihara9" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><a href="&quot;https://commons.wikimedia.org/wiki/File:Ishihara_9.svg&quot;"><img src="Ishihara_9.svg" title="Ishihara Plate 9" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;3.1: Ishihara Plate 9. The number 74 should be visible - please alert your demonstrator if you see the number 71 or no number at all.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.2: Ishihara Plate 9. The number 74 should be visible - please alert your demonstrator if you see the number 71 or no number at all.</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -463,81 +466,77 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3 data-number="3.3.2" class="anchored" data-anchor-id="sources-of-light"><span class="header-section-number">3.3.2</span> Sources of Light</h3>
 <p>An important effect to take note of is how the generation of interference colours under cross polarised light is also a function of the spectral distribution of light interacting with the crystalline material. For the interference colours to behave as we expect them to as a function of birefringence, it is important to use an even a distribution of light as possible.</p>
 <p>Modern <a href="https://en.wikipedia.org/wiki/Light-emitting_diode">:LEDs</a> do not produce a uniform or continuous spectral distribution. Even the <a href="https://www.nobelprize.org/prizes/physics/2014/press-release/">Nobel Prize</a> winning blue LED and its subsequent combination with Ce-doped <a href="https://en.wikipedia.org/wiki/Yttrium_aluminium_garnet">:YAG</a> as a yellow phosphor still does not produce a sufficiently uniform spectrum suitable for XPL microscopy.</p>
-<p>As such, our microscopes are equipped with <a href="https://en.wikipedia.org/wiki/Halogen_lamp">:halogen bulbs</a>, a modification to the standard tungsten-filament incandescent bulbs of the 20th Century. Yes, it’s old-tech, but it’s what we have. Notice in Figure <a href="#fig-bb_spectra">Figure&nbsp;<span>3.2</span></a> that the light emitted from these bulbs is still skewed towards the yellow-red side of the spectrum. The microscopes compensate for this by filtering some of the yellow-red light to even out the distribution a little and make the general spectrum more ‘white’.</p>
+<p>As such, our microscopes are equipped with <a href="https://en.wikipedia.org/wiki/Halogen_lamp">:halogen bulbs</a>, a modification to the standard tungsten-filament incandescent bulbs of the 20th Century. Yes, it’s old-tech, but it’s what we have. Notice in Figure <a href="#fig-bb_spectra">Figure&nbsp;<span>3.3</span></a> that the light emitted from these bulbs is still skewed towards the yellow-red side of the spectrum. The microscopes compensate for this by filtering some of the yellow-red light to even out the distribution a little and make the general spectrum more ‘white’.</p>
 <p>The key message is that the bulbs in your microscopes will produce a significant amount of infrared radiation (i.e., <strong><em>heat</em></strong>). Don’t leave them on for long periods unattended. When turning them on and off, it is best to start at low voltage and ramp it up slowly (over a couple of seconds) rather than just turn it on at full voltage. This increases wear on the bulbs, and makes them more likely to blow (which is not good if it happens during an exam).</p>
 <div class="cell">
 
 </div>
 <div class="cell panel-input card bg-light p-2">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="192" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 191;"><span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>viewof TempK <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>(</span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>  [<span class="dv">1500</span><span class="op">,</span> <span class="dv">10000</span>]<span class="op">,</span> </span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="dv">1700</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Temperature (K):"</span>}</span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="211" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 210;"><span id="cb5-211"><a href="#cb5-211" aria-hidden="true" tabindex="-1"></a>viewof TempK <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>(</span>
+<span id="cb5-212"><a href="#cb5-212" aria-hidden="true" tabindex="-1"></a>  [<span class="dv">1500</span><span class="op">,</span> <span class="dv">10000</span>]<span class="op">,</span> </span>
+<span id="cb5-213"><a href="#cb5-213" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="dv">1700</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Temperature (K):"</span>}</span>
+<span id="cb5-214"><a href="#cb5-214" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<div id="ojs-cell-1" data-nodetype="declaration">
+<div id="ojs-cell-5" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="198" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 197;"><span id="cb2-198"><a href="#cb2-198" aria-hidden="true" tabindex="-1"></a>data_bbspec <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"bb_spectra.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
-<span id="cb2-199"><a href="#cb2-199" aria-hidden="true" tabindex="-1"></a><span class="co">//data_colours = FileAttachment("bb_colours.csv").csv({ typed: true })</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="218" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 217;"><span id="cb6-218"><a href="#cb6-218" aria-hidden="true" tabindex="-1"></a>data_bbspec <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"bb_spectra.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<div id="ojs-cell-2" data-nodetype="declaration">
+<div id="ojs-cell-6" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="205" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 204;"><span id="cb3-205"><a href="#cb3-205" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb3-206"><a href="#cb3-206" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Wavelength (nm)"</span>}<span class="op">,</span></span>
-<span id="cb3-207"><a href="#cb3-207" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {</span>
-<span id="cb3-208"><a href="#cb3-208" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Relative Intensity"</span><span class="op">,</span></span>
-<span id="cb3-209"><a href="#cb3-209" aria-hidden="true" tabindex="-1"></a>    <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">0</span>}<span class="op">,</span></span>
-<span id="cb3-210"><a href="#cb3-210" aria-hidden="true" tabindex="-1"></a>  <span class="dt">margin</span><span class="op">:</span> <span class="dv">40</span><span class="op">,</span></span>
-<span id="cb3-211"><a href="#cb3-211" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">80</span><span class="op">,</span></span>
-<span id="cb3-212"><a href="#cb3-212" aria-hidden="true" tabindex="-1"></a>  <span class="dt">style</span><span class="op">:</span> {</span>
-<span id="cb3-213"><a href="#cb3-213" aria-hidden="true" tabindex="-1"></a>    <span class="dt">background</span><span class="op">:</span> <span class="st">"#CCCCCC"</span><span class="op">,</span></span>
-<span id="cb3-214"><a href="#cb3-214" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
-<span id="cb3-215"><a href="#cb3-215" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"Black"</span></span>
-<span id="cb3-216"><a href="#cb3-216" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb3-217"><a href="#cb3-217" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb3-218"><a href="#cb3-218" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">image</span>([{ <span class="dt">url</span><span class="op">:</span> <span class="st">"https://upload.wikimedia.org/wikipedia/commons/d/d9/Linear_visible_spectrum.svg"</span>}]<span class="op">,</span></span>
-<span id="cb3-219"><a href="#cb3-219" aria-hidden="true" tabindex="-1"></a>    {</span>
-<span id="cb3-220"><a href="#cb3-220" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="dv">565</span><span class="op">,</span></span>
-<span id="cb3-221"><a href="#cb3-221" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="op">-</span><span class="fl">0.2</span><span class="op">,</span></span>
-<span id="cb3-222"><a href="#cb3-222" aria-hidden="true" tabindex="-1"></a>      <span class="dt">width</span><span class="op">:</span> <span class="dv">383</span><span class="op">,</span></span>
-<span id="cb3-223"><a href="#cb3-223" aria-hidden="true" tabindex="-1"></a>      <span class="dt">height</span><span class="op">:</span> width<span class="op">*</span><span class="fl">0.1</span><span class="op">,</span></span>
-<span id="cb3-224"><a href="#cb3-224" aria-hidden="true" tabindex="-1"></a>      <span class="dt">src</span><span class="op">:</span> <span class="st">"url"</span></span>
-<span id="cb3-225"><a href="#cb3-225" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
-<span id="cb3-226"><a href="#cb3-226" aria-hidden="true" tabindex="-1"></a>    <span class="co">//Plot.ruleX([380]),</span></span>
-<span id="cb3-227"><a href="#cb3-227" aria-hidden="true" tabindex="-1"></a>    <span class="co">//Plot.ruleX([750]),</span></span>
-<span id="cb3-228"><a href="#cb3-228" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">areaY</span>(filtered<span class="op">,</span> { </span>
-<span id="cb3-229"><a href="#cb3-229" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"wl"</span><span class="op">,</span> </span>
-<span id="cb3-230"><a href="#cb3-230" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> </span>
-<span id="cb3-231"><a href="#cb3-231" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"hexvis"</span>})</span>
-<span id="cb3-232"><a href="#cb3-232" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb3-233"><a href="#cb3-233" aria-hidden="true" tabindex="-1"></a>      ]<span class="op">,</span></span>
-<span id="cb3-234"><a href="#cb3-234" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span></span>
-<span id="cb3-235"><a href="#cb3-235" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="224" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 223;"><span id="cb7-224"><a href="#cb7-224" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb7-225"><a href="#cb7-225" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Wavelength (nm)"</span>}<span class="op">,</span></span>
+<span id="cb7-226"><a href="#cb7-226" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {</span>
+<span id="cb7-227"><a href="#cb7-227" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Relative Intensity"</span><span class="op">,</span></span>
+<span id="cb7-228"><a href="#cb7-228" aria-hidden="true" tabindex="-1"></a>    <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">0</span>}<span class="op">,</span></span>
+<span id="cb7-229"><a href="#cb7-229" aria-hidden="true" tabindex="-1"></a>  <span class="dt">margin</span><span class="op">:</span> <span class="dv">40</span><span class="op">,</span></span>
+<span id="cb7-230"><a href="#cb7-230" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">80</span><span class="op">,</span></span>
+<span id="cb7-231"><a href="#cb7-231" aria-hidden="true" tabindex="-1"></a>  <span class="dt">style</span><span class="op">:</span> {</span>
+<span id="cb7-232"><a href="#cb7-232" aria-hidden="true" tabindex="-1"></a>    <span class="dt">background</span><span class="op">:</span> <span class="st">"#CCCCCC"</span><span class="op">,</span></span>
+<span id="cb7-233"><a href="#cb7-233" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
+<span id="cb7-234"><a href="#cb7-234" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"Black"</span></span>
+<span id="cb7-235"><a href="#cb7-235" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb7-236"><a href="#cb7-236" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb7-237"><a href="#cb7-237" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">image</span>([{ <span class="dt">url</span><span class="op">:</span> <span class="st">"https://upload.wikimedia.org/wikipedia/commons/d/d9/Linear_visible_spectrum.svg"</span>}]<span class="op">,</span></span>
+<span id="cb7-238"><a href="#cb7-238" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb7-239"><a href="#cb7-239" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="dv">565</span><span class="op">,</span></span>
+<span id="cb7-240"><a href="#cb7-240" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="op">-</span><span class="fl">0.2</span><span class="op">,</span></span>
+<span id="cb7-241"><a href="#cb7-241" aria-hidden="true" tabindex="-1"></a>      <span class="dt">width</span><span class="op">:</span> <span class="dv">383</span><span class="op">,</span></span>
+<span id="cb7-242"><a href="#cb7-242" aria-hidden="true" tabindex="-1"></a>      <span class="dt">height</span><span class="op">:</span> width<span class="op">*</span><span class="fl">0.1</span><span class="op">,</span></span>
+<span id="cb7-243"><a href="#cb7-243" aria-hidden="true" tabindex="-1"></a>      <span class="dt">src</span><span class="op">:</span> <span class="st">"url"</span></span>
+<span id="cb7-244"><a href="#cb7-244" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="cb7-245"><a href="#cb7-245" aria-hidden="true" tabindex="-1"></a>    <span class="co">//Plot.ruleX([380]),</span></span>
+<span id="cb7-246"><a href="#cb7-246" aria-hidden="true" tabindex="-1"></a>    <span class="co">//Plot.ruleX([750]),</span></span>
+<span id="cb7-247"><a href="#cb7-247" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">areaY</span>(filtered<span class="op">,</span> { </span>
+<span id="cb7-248"><a href="#cb7-248" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"wl"</span><span class="op">,</span> </span>
+<span id="cb7-249"><a href="#cb7-249" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> </span>
+<span id="cb7-250"><a href="#cb7-250" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"hexvis"</span>})</span>
+<span id="cb7-251"><a href="#cb7-251" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb7-252"><a href="#cb7-252" aria-hidden="true" tabindex="-1"></a>      ]<span class="op">,</span></span>
+<span id="cb7-253"><a href="#cb7-253" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span></span>
+<span id="cb7-254"><a href="#cb7-254" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="fig-bb_spectra" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<div id="ojs-cell-3" data-nodetype="expression">
+<div id="ojs-cell-7" data-nodetype="expression">
 
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;3.2: Relative spectral distribution of emissions for Black Body Radiation at a given Temperature. The display colour of the curve approximates the perceived colour of this spectrum by the human eye. Compare the spectral output for a Halogen bulb at 3000K vs Daylight at 6500K</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.3: Relative spectral distribution of emissions for Black Body Radiation at a given Temperature. The display colour of the curve approximates the perceived colour of this spectrum by the human eye. Compare the spectral output for a Halogen bulb at 3000K vs Daylight at 6500K</figcaption><p></p>
 </figure>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="241" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 240;"><span id="cb4-241"><a href="#cb4-241" aria-hidden="true" tabindex="-1"></a>filtered <span class="op">=</span> data_bbspec<span class="op">.</span><span class="fu">filter</span>(<span class="kw">function</span>(bbspectra) {</span>
-<span id="cb4-242"><a href="#cb4-242" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> TempK <span class="op">==</span> bbspectra<span class="op">.</span><span class="at">temperature</span><span class="op">;</span></span>
-<span id="cb4-243"><a href="#cb4-243" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb4-244"><a href="#cb4-244" aria-hidden="true" tabindex="-1"></a><span class="co">//colour_vis = data_colours.filter(function(bbcolour) {</span></span>
-<span id="cb4-245"><a href="#cb4-245" aria-hidden="true" tabindex="-1"></a><span class="co">//  return TempK == bbcolour.temperature;</span></span>
-<span id="cb4-246"><a href="#cb4-246" aria-hidden="true" tabindex="-1"></a><span class="co">//})</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="260" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 259;"><span id="cb8-260"><a href="#cb8-260" aria-hidden="true" tabindex="-1"></a>filtered <span class="op">=</span> data_bbspec<span class="op">.</span><span class="fu">filter</span>(<span class="kw">function</span>(bbspectra) {</span>
+<span id="cb8-261"><a href="#cb8-261" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> TempK <span class="op">==</span> bbspectra<span class="op">.</span><span class="at">temperature</span><span class="op">;</span></span>
+<span id="cb8-262"><a href="#cb8-262" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<div id="ojs-cell-4" data-nodetype="declaration">
+<div id="ojs-cell-8" data-nodetype="declaration">
 
 </div>
 </div>
@@ -549,9 +548,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"viewof TempK = Inputs.range(\n  [1500, 10000], \n  {value: 1700, step: 100, label: \"Temperature (K):\"}\n)\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"data_bbspec = FileAttachment(\"bb_spectra.csv\").csv({ typed: true })\n//data_colours = FileAttachment(\"bb_colours.csv\").csv({ typed: true })\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"\nPlot.plot({\n  x: {label: \"Wavelength (nm)\"},\n  y: {\n    label: \"Relative Intensity\",\n    labelOffset: 0},\n  margin: 40,\n  marginBottom: 80,\n  style: {\n    background: \"#CCCCCC\",\n    fontSize: 20,\n    color: \"Black\"\n  },\n  marks: [\n    Plot.image([{ url: \"https://upload.wikimedia.org/wikipedia/commons/d/d9/Linear_visible_spectrum.svg\"}],\n    {\n      x: 565,\n      y: -0.2,\n      width: 383,\n      height: width*0.1,\n      src: \"url\"\n    }),\n    //Plot.ruleX([380]),\n    //Plot.ruleX([750]),\n    Plot.areaY(filtered, { \n      x: \"wl\", \n      y: \"value\", \n      fill: \"hexvis\"})\n      \n      ],\n  width: 800\n})\n\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"filtered = data_bbspec.filter(function(bbspectra) {\n  return TempK == bbspectra.temperature;\n})\n//colour_vis = data_colours.filter(function(bbcolour) {\n//  return TempK == bbcolour.temperature;\n//})\n"},{"methodName":"interpretQuiet","source":"shinyInput('TempK')"}]}
+{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"viewof biref = Inputs.range(\n  [0.0005, 0.14], \n  {value: 0.01, step: 0.0005, label: \"Birefringence:\"}\n)\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"data_intspec = FileAttachment(\"int_spectra.csv\").csv({ typed: true })\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"\nPlot.plot({\n  x: {label: \"Wavelength (nm)\"},\n  y: {\n    domain: [0,1],\n    label: \"Relative Intensity\",\n    labelOffset: 0},\n  margin: 40,\n  marginBottom: 80,\n  style: {\n    background: \"#CCCCCC\",\n    fontSize: 20,\n    color: \"Black\"\n  },\n  marks: [\n    Plot.areaY(interference_filtered, { \n      x: \"wl\", \n      y: \"value\", \n      fill: \"hexvis\"})\n      \n      ],\n  width: 800\n})\n\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"interference_filtered = data_intspec.filter(function(intspectra) {\n  return biref == intspectra.biref;\n})\n"},{"methodName":"interpret","cellName":"ojs-cell-5","inline":false,"source":"viewof TempK = Inputs.range(\n  [1500, 10000], \n  {value: 1700, step: 100, label: \"Temperature (K):\"}\n)\n"},{"methodName":"interpret","cellName":"ojs-cell-6","inline":false,"source":"data_bbspec = FileAttachment(\"bb_spectra.csv\").csv({ typed: true })\n"},{"methodName":"interpret","cellName":"ojs-cell-7","inline":false,"source":"\nPlot.plot({\n  x: {label: \"Wavelength (nm)\"},\n  y: {\n    label: \"Relative Intensity\",\n    labelOffset: 0},\n  margin: 40,\n  marginBottom: 80,\n  style: {\n    background: \"#CCCCCC\",\n    fontSize: 20,\n    color: \"Black\"\n  },\n  marks: [\n    Plot.image([{ url: \"https://upload.wikimedia.org/wikipedia/commons/d/d9/Linear_visible_spectrum.svg\"}],\n    {\n      x: 565,\n      y: -0.2,\n      width: 383,\n      height: width*0.1,\n      src: \"url\"\n    }),\n    //Plot.ruleX([380]),\n    //Plot.ruleX([750]),\n    Plot.areaY(filtered, { \n      x: \"wl\", \n      y: \"value\", \n      fill: \"hexvis\"})\n      \n      ],\n  width: 800\n})\n\n"},{"methodName":"interpret","cellName":"ojs-cell-8","inline":false,"source":"filtered = data_bbspec.filter(function(bbspectra) {\n  return TempK == bbspectra.temperature;\n})\n\n"},{"methodName":"interpretQuiet","source":"shinyInput('biref')"},{"methodName":"interpretQuiet","source":"shinyInput('TempK')"}]}
 </script>
 <script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
 window._ojs.paths.runtimeToDoc = "../../mineralogy";
 window._ojs.paths.runtimeToRoot = "../..";
 window._ojs.paths.docToRoot = "..";
@@ -767,6 +767,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {

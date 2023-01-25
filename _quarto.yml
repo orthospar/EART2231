@@ -24,8 +24,8 @@ book:
         - quick_access/process.qmd
     - part: mineralogy.qmd
       chapters:
-        - mineralogy/crystallography.qmd 
         - mineralogy/physical.qmd
+        - mineralogy/crystallography.qmd 
         - mineralogy/optical.qmd
     - part: petrology.qmd
       chapters: 
@@ -37,9 +37,13 @@ book:
     - resources.qmd
     - references.qmd
 
+number-depth: 1
+toc-title: "Contents"
+toc-depth: 1
+
 citation: true
 
-toc-title: "In this chapter"
+
 
 # comments:
 #   hypothesis: true

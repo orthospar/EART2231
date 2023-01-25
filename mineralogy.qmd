@@ -3,30 +3,27 @@
 This section of the textbook deals largely with crystallography and optical mineralogy. We also revise and expand upon your existing knowledge of the physical properties of minerals. 
 
 
-## Crystallography
+## [Physical Properties of Minerals]("https://orthospar.github.io/AppMinPet/mineralogy/physical.html")
 
 :::{.callout-note}
 ## Learning Outcomes
+ - Revise the physical properties of minerals
+:::
 
+## [Crystallography]("https://orthospar.github.io/AppMinPet/mineralogy/crystallography.html")
+
+:::{.callout-note}
+## Learning Outcomes
  - Understand the definition of a mineral, unit cell and crystal lattice
  - Recognise symmetry elements
  - Classify minerals into one of the 7 crystal systems based on symmetry
+ - Predict some physical properties of minerals based on their structure
 :::
 
-## Physical Properties of Minerals
+## [Optical Properties of Minerals]("https://orthospar.github.io/AppMinPet/mineralogy/optical.html")
 
 :::{.callout-note}
 ## Learning Outcomes
-
- - Revise physical properties of minerals
- - Predict physical properties based on crystal structure
-:::
-
-## Optical Properties of Minerals
-
-:::{.callout-note}
-## Learning Outcomes
-
  - Correct use of a petrographic microscope
  - Describe optical properties of minerals in thin section
     - in Plane Polarised Light

@@ -1,1 +1,20 @@
-# Physical properties of minerals
+# Physical properties of minerals {.unnumbered}
+
+## Colour
+
+## Lustre
+
+## Transparency/Opacity
+
+## Cleavage/Fracture
+Cleavage and Fracture are terms used to describe how the mineral *breaks*. If the mineral repeatedly breaks along a plane, and always in the same orientation(s), then the broken surface is termed a [:**cleavage**]("https://en.wikipedia.org/wiki/Cleavage_(crystal)). If the broken surface is not repeatable (it breaks in a different direction each time) it is termed a [:**fracture**]("https://en.wikipedia.org/wiki/Fracture_(mineralogy)"). It is important to note that *all* minerals will have a fracture if broken in a direction that is not aligned with a cleavage orientation. For minerals with many cleavage directions, fracture tends not to occur only because the minerals cleave so readily! 
+
+## Hardness
+
+## Streak
+
+## Density
+
+## Magnetism
+
+## Habit

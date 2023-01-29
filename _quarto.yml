@@ -43,10 +43,8 @@ toc-depth: 1
 
 citation: true
 
-
-
-# comments:
-#   hypothesis: true
+ comments:
+   hypothesis: true
 
 filters:
    - nutshell
@@ -58,8 +56,8 @@ format:
     theme:
       light: flatly
       dark: darkly
-  pdf:
-     documentclass: scrreprt
+#  pdf:
+#     documentclass: scrreprt
   epub: default
  
 server: shiny

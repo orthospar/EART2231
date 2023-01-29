@@ -43,8 +43,8 @@ toc-depth: 1
 
 citation: true
 
- comments:
-   hypothesis: true
+comments:
+  hypothesis: true
 
 filters:
    - nutshell

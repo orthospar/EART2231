@@ -28,6 +28,8 @@ The upper polarisation plate (the anlyser) is oriented perpendicular to the orie
 ### Birefringence
 Upon insertion of the upper polarisation plate (the analyser) the most striking observation is the sudden bright colourful display of [:Interference Colours](https://en.wikipedia.org/wiki/Interference_colour_chart), particularly in minerals such as olivine. Interference colours are only visible in *anisotropic minerals* arise as a function of thin section thickness and the [:Birefringence](https://en.wikipedia.org/wiki/Birefringence) of the mineral. 
 
+
+::: {.content-hidden unless-format="html"}
 ```{r, echo=FALSE, message=FALSE}
 library(reshape)
 library(dplyr)
@@ -121,14 +123,14 @@ interference_filtered = data_intspec.filter(function(intspectra) {
   return biref == intspectra.biref;
 })
 ```
-
+:::
 
 
 ### Extinction Angles
 
 ### Twinning
 
-
+::: {.content-hidden unless-format="htmal"}
 ## Further concepts
 
 There are further techniques not covered here, such as obtaining an [:optic figure](https://en.wikipedia.org/wiki/Conoscopic_interference_pattern) and measuring the corresponding optic angle (or 2V). It is sufficient at this stage to know that they *exist* -- we will cover this technique in a later course. There are also a few other concepts that the beginning microscopist should be aware of. These are covered in this section.
@@ -264,3 +266,4 @@ filtered = data_bbspec.filter(function(bbspectra) {
 
 ```
 
+:::

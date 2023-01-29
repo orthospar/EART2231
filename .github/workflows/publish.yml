@@ -26,6 +26,10 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages: |
+            reshape
+            readr
+            dplyr
+            pavo
             jsonlite
             sysfonts
             ggplot2

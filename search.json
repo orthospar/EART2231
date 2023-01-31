@@ -74,28 +74,28 @@
     "href": "mineralogy/physical.html#colour",
     "title": "Physical properties of minerals",
     "section": "Colour",
-    "text": "Colour"
+    "text": "Colour\nThe colour of a mineral is simple to observe, but the root causes of colour in minerals is usually complicated (not even including how it is detected by the human eye, and subsequently interpreted by the human mind). For some minerals, colour is diagnostic – that is to say that the mineral is that colour and that colour only. Two good examples of this are azurite and malachite, which are always blue and green, respectively. The colour of other minerals can vary wildy depending on trace element composition, structural defects or even microscopic inclusions – quartz is a great example of this, ranging from colourless to yellow to black to purple to pink to green to red … and so on…"
   },
   {
     "objectID": "mineralogy/physical.html#lustre",
     "href": "mineralogy/physical.html#lustre",
     "title": "Physical properties of minerals",
     "section": "Lustre",
-    "text": "Lustre"
+    "text": "Lustre\n:Lustre is the property of how a mineral reflects light. It should not be confused with colour, although the two are linked and often described togther. For instance, gold has a metallic lustre and is yellow in colour, whereas copper has a metallic lustre but is orange in colour. Try to avoid using terms that could be confusing… for instance, if you find a mineral that you think looks silvery, don’t call it “silver”, but describe it as “metallic white-grey”. Something else to keep in mind is that lustre is very difficult to photograph and display correctly on a computer screen, and depending on the lighting conditions during photography lustre may not be captured at all. Common words to describe lustre include:\n\nmetallic – highly reflective, looks like metal (e.g., pyrite, gold, copper)\nsubmetallic – less reflective than metallic, because the mineral is a little bit transluscent (e.g., sphalerite)\ndull or earthy – looks like a matte finish, not glossy in any way (e.g., kaolinite)\nglassy/vitreous – transparent/transluscent minerals that look like glass (e.g., quartz, olivine)\nadamantine – transparent/transluscent minerals that shine more than you’d expect, like diamond. They have a high refractive index (e.g., cubic zirconia)\nresinous – transparent/transluscent minerals that shine less than you’d expect, like plastic or resin (e.g., amber)\n\npearly – reflective with a subtle softness to it, like a pearl or the inside of a shell (e.g., muscovite)\ngreasy – looks like solid fat or grease (e.g., opal)\nwaxy – like greasy minerals, but often more opaque or coarser grained than greasy minerals (e.g., jadeite)\nsilky - has a sheen like silk due to parallel alignment of microfibres (e.g., asbestos, ulexite)\n\nThere are also some other optical effects that are often distinctive, but not lustre sensu stricto. These tend to arise due to thin film intereference colours or oriented growth of micro inclusions, and include:\n\niridescence/schiller effects – strong colour play due to micro-scale platy minerals as inclusions or exsolution layers. There are some terms for very specific examples:\n\n:opalescence – lots of splotchy colours, like :opal\n:labradorescence – very commonly displayed in plagioclase\n:adularescence – uncommonly (almost rarely) displayed in K-feldspars\n:aventurescence – glittery inclusions in a transparent stone\n\n:chatoyancy – usually something silky as parallel micro inclusions in something vitreous\n:asterisms – similar to chatoyancy, but the inclusions are aligned so that a 4- or 6-pointed star is seen. This is more important in gemmology, as the stones need to be cut :en cabochon (it’s not readily visible in raw/uncut material)"
   },
   {
-    "objectID": "mineralogy/physical.html#transparencyopacity",
-    "href": "mineralogy/physical.html#transparencyopacity",
+    "objectID": "mineralogy/physical.html#diaphaneity",
+    "href": "mineralogy/physical.html#diaphaneity",
     "title": "Physical properties of minerals",
-    "section": "Transparency/Opacity",
-    "text": "Transparency/Opacity"
+    "section": "Diaphaneity",
+    "text": "Diaphaneity"
   },
   {
     "objectID": "mineralogy/physical.html#cleavagefracture",
     "href": "mineralogy/physical.html#cleavagefracture",
     "title": "Physical properties of minerals",
     "section": "Cleavage/Fracture",
-    "text": "Cleavage/Fracture\nCleavage and Fracture are terms used to describe how the mineral breaks. If the mineral repeatedly breaks along a plane, and always in the same orientation(s), then the broken surface is termed a :cleavage. If the break is planar, but not repeatable, it is termed a :parting. If the broken surface is not repeatable (it breaks in a different direction each time) it is termed a :fracture.\n\nCleavage\n\n\nParting\nSometimes a crystallographic plane of weakness might arise due to structural defects in the crystal lattice. However, since this plane of weakness is not necessesarily repeated within the crystal structure (such as single twin plane), the crystal will not subsequently always break in the same direction, and it may not be present in every crystal.\n\n\nFracture\nIt is important to note that all minerals will have a fracture if broken in a direction that is not aligned with a cleavage orientationbecause the minerals cleave so readily!"
+    "text": "Cleavage/Fracture\nCleavage and Fracture are terms used to describe how the mineral breaks. If the mineral repeatedly breaks along a plane, and always in the same orientation(s), then the broken surface is termed a :cleavage. If the break is planar, but not repeatable, it is termed a parting. If the broken surface is irregular and not repeatable (it breaks somewhat randomly in a different direction each time) it is termed a :fracture.\n\nCleavage\n\n\nParting\nSometimes a crystallographic plane of weakness might arise due to structural defects in the crystal lattice. However, since this plane of weakness is not necessesarily repeated within the crystal structure (such as single twin plane), the crystal will not subsequently always break in the same direction. Importantly, partings may not be present in every crystal, which is why they are not considered a diagnostic feature. However, for minerals that have a solid solution series at high temperature but a solvus\n\n\nFracture\nIt is important to note that all minerals will have a fracture if broken in a direction that is not aligned with a cleavage orientationbecause the minerals cleave so readily!"
   },
   {
     "objectID": "mineralogy/physical.html#hardness",

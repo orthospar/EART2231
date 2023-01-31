@@ -260,16 +260,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="../petrology/classification.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Classification of Igneous Rocks</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../petrology/phase_diagrams.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Phase Diagrams</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../petrology/processes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Igneous Processes</span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -303,6 +293,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <ul class="collapse">
   <li><a href="#plane-polarised-light" id="toc-plane-polarised-light" class="nav-link active" data-scroll-target="#plane-polarised-light">Plane Polarised Light</a></li>
   <li><a href="#cross-polarised-light" id="toc-cross-polarised-light" class="nav-link" data-scroll-target="#cross-polarised-light">Cross Polarised Light</a></li>
+  <li><a href="#further-concepts" id="toc-further-concepts" class="nav-link" data-scroll-target="#further-concepts">Further concepts</a></li>
   </ul>
 </nav>
     </div>
@@ -430,6 +421,101 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="twinning" class="level3">
 <h3 class="anchored" data-anchor-id="twinning">Twinning</h3>
+</section>
+</section>
+<section id="further-concepts" class="level2">
+<h2 class="anchored" data-anchor-id="further-concepts">Further concepts</h2>
+<p>There are further techniques not covered here, such as obtaining an <a href="https://en.wikipedia.org/wiki/Conoscopic_interference_pattern">:optic figure</a> and measuring the corresponding optic angle (or 2V). It is sufficient at this stage to know that they <em>exist</em> – we will cover this technique in a later course. There are also a few other concepts that the beginning microscopist should be aware of. These are covered in this section.</p>
+<section id="colour-perception" class="level3">
+<h3 class="anchored" data-anchor-id="colour-perception">Colour perception</h3>
+<p>We all see the world differently, and this should not be a disadvantage when it comes to microscopy. Due to the different physical interaction properties of light between dyes and inks, LED/LCD computer screens, camera detectors, and how interference colours arise, it is not suprising that dramatic differences in perception of colours often arise between depictions of what is seen down the microscope versus what is actually observed, even in individuals with full colour perception.</p>
+<p>Figure <a href="#fig-ishihara9">Figure&nbsp;<span>2.2</span></a> is an <a href="">:Ishihara</a> colour perception plate. This is not a faithful reconstruction (due to colour rendering in various digital display technologies) but it is sufficient to illustrate the point here. You should be able to distinguish the number 74. If you see the number 71, or no number at all, then please alert your demonstrator so that we can help provide you with some extra materials and assistance. For instance, instead of using digitally rendered or print copied of the Michel Levy chart, we will provide you with a quartz wedge plate which can be viewed under cross polarised light to use as the true point of reference for the interference colours.</p>
+<div id="fig-ishihara9" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><a href="&quot;https://commons.wikimedia.org/wiki/File:Ishihara_9.svg&quot;"><img src="Ishihara_9.svg" title="Ishihara Plate 9" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2.2: Ishihara Plate 9. The number 74 should be visible - please alert your demonstrator if you see the number 71 or no number at all.</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="sources-of-light" class="level3">
+<h3 class="anchored" data-anchor-id="sources-of-light">Sources of Light</h3>
+<p>An important effect to take note of is how the generation of interference colours under cross polarised light is also a function of the spectral distribution of light interacting with the crystalline material. For the interference colours to behave as we expect them to as a function of birefringence, it is important to use an even a distribution of light as possible.</p>
+<p>Modern <a href="https://en.wikipedia.org/wiki/Light-emitting_diode">:LEDs</a> do not produce a uniform or continuous spectral distribution. Even the <a href="https://www.nobelprize.org/prizes/physics/2014/press-release/">Nobel Prize</a> winning blue LED and its subsequent combination with Ce-doped <a href="https://en.wikipedia.org/wiki/Yttrium_aluminium_garnet">:YAG</a> as a yellow phosphor still does not produce a sufficiently uniform spectrum suitable for XPL microscopy.</p>
+<p>As such, our microscopes are equipped with <a href="https://en.wikipedia.org/wiki/Halogen_lamp">:halogen bulbs</a>, a modification to the standard tungsten-filament incandescent bulbs of the 20th Century. Yes, it’s old-tech, but it’s what we have. Notice in Figure <a href="#fig-bb_spectra">Figure&nbsp;<span>2.3</span></a> that the light emitted from these bulbs is still skewed towards the yellow-red side of the spectrum. The microscopes compensate for this by filtering some of the yellow-red light to even out the distribution a little and make the general spectrum more ‘white’.</p>
+<p>The key message is that the bulbs in your microscopes will produce a significant amount of infrared radiation (i.e., <strong><em>heat</em></strong>). Don’t leave them on for long periods unattended. When turning them on and off, it is best to start at low voltage and ramp it up slowly (over a couple of seconds) rather than just turn it on at full voltage. This increases wear on the bulbs, and makes them more likely to blow (which is not good if it happens during an exam).</p>
+<div class="cell">
+
+</div>
+<div class="cell panel-input card bg-light p-2">
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="213" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 212;"><span id="cb5-213"><a href="#cb5-213" aria-hidden="true" tabindex="-1"></a>viewof TempK <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>(</span>
+<span id="cb5-214"><a href="#cb5-214" aria-hidden="true" tabindex="-1"></a>  [<span class="dv">1500</span><span class="op">,</span> <span class="dv">10000</span>]<span class="op">,</span> </span>
+<span id="cb5-215"><a href="#cb5-215" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">value</span><span class="op">:</span> <span class="dv">1700</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Temperature (K):"</span>}</span>
+<span id="cb5-216"><a href="#cb5-216" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="220" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 219;"><span id="cb6-220"><a href="#cb6-220" aria-hidden="true" tabindex="-1"></a>data_bbspec <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"bb_spectra.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="226" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 225;"><span id="cb7-226"><a href="#cb7-226" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb7-227"><a href="#cb7-227" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Wavelength (nm)"</span>}<span class="op">,</span></span>
+<span id="cb7-228"><a href="#cb7-228" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {</span>
+<span id="cb7-229"><a href="#cb7-229" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Relative Intensity"</span><span class="op">,</span></span>
+<span id="cb7-230"><a href="#cb7-230" aria-hidden="true" tabindex="-1"></a>    <span class="dt">labelOffset</span><span class="op">:</span> <span class="dv">0</span>}<span class="op">,</span></span>
+<span id="cb7-231"><a href="#cb7-231" aria-hidden="true" tabindex="-1"></a>  <span class="dt">margin</span><span class="op">:</span> <span class="dv">40</span><span class="op">,</span></span>
+<span id="cb7-232"><a href="#cb7-232" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">80</span><span class="op">,</span></span>
+<span id="cb7-233"><a href="#cb7-233" aria-hidden="true" tabindex="-1"></a>  <span class="dt">style</span><span class="op">:</span> {</span>
+<span id="cb7-234"><a href="#cb7-234" aria-hidden="true" tabindex="-1"></a>    <span class="dt">background</span><span class="op">:</span> <span class="st">"#CCCCCC"</span><span class="op">,</span></span>
+<span id="cb7-235"><a href="#cb7-235" aria-hidden="true" tabindex="-1"></a>    <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
+<span id="cb7-236"><a href="#cb7-236" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> <span class="st">"Black"</span></span>
+<span id="cb7-237"><a href="#cb7-237" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb7-238"><a href="#cb7-238" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb7-239"><a href="#cb7-239" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">image</span>([{ <span class="dt">url</span><span class="op">:</span> <span class="st">"https://upload.wikimedia.org/wikipedia/commons/d/d9/Linear_visible_spectrum.svg"</span>}]<span class="op">,</span></span>
+<span id="cb7-240"><a href="#cb7-240" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb7-241"><a href="#cb7-241" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="dv">565</span><span class="op">,</span></span>
+<span id="cb7-242"><a href="#cb7-242" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="op">-</span><span class="fl">0.2</span><span class="op">,</span></span>
+<span id="cb7-243"><a href="#cb7-243" aria-hidden="true" tabindex="-1"></a>      <span class="dt">width</span><span class="op">:</span> <span class="dv">383</span><span class="op">,</span></span>
+<span id="cb7-244"><a href="#cb7-244" aria-hidden="true" tabindex="-1"></a>      <span class="dt">height</span><span class="op">:</span> width<span class="op">*</span><span class="fl">0.1</span><span class="op">,</span></span>
+<span id="cb7-245"><a href="#cb7-245" aria-hidden="true" tabindex="-1"></a>      <span class="dt">src</span><span class="op">:</span> <span class="st">"url"</span></span>
+<span id="cb7-246"><a href="#cb7-246" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="cb7-247"><a href="#cb7-247" aria-hidden="true" tabindex="-1"></a>    <span class="co">//Plot.ruleX([380]),</span></span>
+<span id="cb7-248"><a href="#cb7-248" aria-hidden="true" tabindex="-1"></a>    <span class="co">//Plot.ruleX([750]),</span></span>
+<span id="cb7-249"><a href="#cb7-249" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">areaY</span>(filtered<span class="op">,</span> { </span>
+<span id="cb7-250"><a href="#cb7-250" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"wl"</span><span class="op">,</span> </span>
+<span id="cb7-251"><a href="#cb7-251" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> </span>
+<span id="cb7-252"><a href="#cb7-252" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"hexvis"</span>})</span>
+<span id="cb7-253"><a href="#cb7-253" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb7-254"><a href="#cb7-254" aria-hidden="true" tabindex="-1"></a>      ]<span class="op">,</span></span>
+<span id="cb7-255"><a href="#cb7-255" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">800</span></span>
+<span id="cb7-256"><a href="#cb7-256" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fig-bb_spectra" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div id="ojs-cell-7" data-nodetype="expression">
+
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2.3: Relative spectral distribution of emissions for Black Body Radiation at a given Temperature. The display colour of the curve approximates the perceived colour of this spectrum by the human eye. Compare the spectral output for a Halogen bulb at 3000K vs Daylight at 6500K</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="262" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 261;"><span id="cb8-262"><a href="#cb8-262" aria-hidden="true" tabindex="-1"></a>filtered <span class="op">=</span> data_bbspec<span class="op">.</span><span class="fu">filter</span>(<span class="kw">function</span>(bbspectra) {</span>
+<span id="cb8-263"><a href="#cb8-263" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> TempK <span class="op">==</span> bbspectra<span class="op">.</span><span class="at">temperature</span><span class="op">;</span></span>
+<span id="cb8-264"><a href="#cb8-264" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-8" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
 
 
 </section>

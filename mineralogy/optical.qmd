@@ -130,7 +130,7 @@ interference_filtered = data_intspec.filter(function(intspectra) {
 
 ### Twinning
 
-::: {.content-hidden unless-format="htmal"}
+::: {.content-hidden unless-format="html"}
 ## Further concepts
 
 There are further techniques not covered here, such as obtaining an [:optic figure](https://en.wikipedia.org/wiki/Conoscopic_interference_pattern) and measuring the corresponding optic angle (or 2V). It is sufficient at this stage to know that they *exist* -- we will cover this technique in a later course. There are also a few other concepts that the beginning microscopist should be aware of. These are covered in this section.

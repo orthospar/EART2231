@@ -8,7 +8,7 @@ This lab manual covers the introductory topics for the Mineralogy and Petrology 
 
 ![](cc.svg){width=22}  ![](by.svg){width=22}  ![](sa.svg){width=22}
 
-[Applied Mineralogy and Petrology]("https://orthospar.github.io/AppMinPet/") by Jason Bennett and Marco Fiorentini is licensed under [CC BY-SA 4.0]("http://creativecommons.org/licenses/by-sa/4.0/") 
+[Applied Mineralogy and Petrology]("https://orthospar.github.io/AppMinPet/") by Jason Bennett, Marco Fiorentini, and Anthony Kemp is licensed under [CC BY-SA 4.0]("http://creativecommons.org/licenses/by-sa/4.0/") 
 
 
 This manual was written in Quarto Markdown, and contains executable code blocks. All text and supporting code is available on github at [orthospar/AppMinPet](https://github.com/orthospar/AppMinPet). 

@@ -5,7 +5,7 @@ book:
   title: "Applied Mineralogy and Petrology"
   subtitle: "A Lab Manual for EART2231 at the University of Western Australia"
   output-file: "EART2231_IntroMinPet"
-  author: ["Jason Bennett", "Marco Fiorentini"]
+  author: ["Jason Bennett", "Marco Fiorentini", "Anthony Kemp"]
   search: true
   date: today
   date-format: "DD MMM YYYY"
@@ -31,8 +31,8 @@ book:
       chapters: 
         - petrology/description.qmd
         - petrology/classification.qmd
-        - petrology/phase_diagrams.qmd
-        - petrology/processes.qmd
+      #  - petrology/phase_diagrams.qmd
+      #  - petrology/processes.qmd
   appendices: 
     - resources.qmd
     - references.qmd

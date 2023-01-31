@@ -3,14 +3,14 @@
 This section of the textbook deals largely with crystallography and optical mineralogy. We also revise and expand upon your existing knowledge of the physical properties of minerals. 
 
 
-## [Physical Properties of Minerals]("https://orthospar.github.io/AppMinPet/mineralogy/physical.html")
+## [Physical Properties of Minerals](https://orthospar.github.io/EART2231/mineralogy/physical.html)
 
 :::{.callout-note}
 ## Learning Outcomes
  - Revise the physical properties of minerals
 :::
 
-## [Crystallography]("https://orthospar.github.io/AppMinPet/mineralogy/crystallography.html")
+## [Crystallography](https://orthospar.github.io/EART2231/mineralogy/crystallography.html)
 
 :::{.callout-note}
 ## Learning Outcomes
@@ -20,7 +20,7 @@ This section of the textbook deals largely with crystallography and optical mine
  - Predict some physical properties of minerals based on their structure
 :::
 
-## [Optical Properties of Minerals]("https://orthospar.github.io/AppMinPet/mineralogy/optical.html")
+## [Optical Properties of Minerals](https://orthospar.github.io/EART2231/mineralogy/optical.html)
 
 :::{.callout-note}
 ## Learning Outcomes

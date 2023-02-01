@@ -1,6 +1,9 @@
 # Physical properties of minerals {.unnumbered}
 Minerals have a wide range of physical properties that can be diagnostic for the identification of mineral species. We do not expect you to learn all of these properties off by heart for a given set of minerals -- it will come to you in time as you apply and practise your skills as a geologist. What you do need to know is *how* to identify each physical property, so that you can test a sample and look up matching candidates online. Below are the common/main techniques that a geologist is expected to know. We provide a bit more context and detail than what you have covered previously, but we have added plently of links to external resources for further reading.
 
+# Non-destructive Properties I: Just look at it
+One of the simplest things we can do to describe the physical properties of a mineral sample is to *just look at it*. The benefit of these techniques is that they are *non-destructive* -- suitable even for museum specimens behind glass cabinets! There are three main properties we can look out for:
+
 ## Colour
 The colour of a mineral is simple to observe, but the root causes of colour in minerals is usually complicated (not even including how it is detected by the human eye, and subsequently interpreted by the human mind). For some minerals, colour is *diagnostic* -- that is to say that the mineral is that colour and that colour only. Two good examples of this are [azurite](https://en.wikipedia.org/wiki/Azurite) and [malachite](https://en.wikipedia.org/wiki/Malachite), which are always blue and green, respectively. The colour of other minerals can vary wildy depending on trace element composition, structural defects or even microscopic inclusions -- [quartz](https://en.wikipedia.org/wiki/Quartz) is a great example of this, ranging from colourless to yellow to black to purple to pink to green to red ... *and so on*...
 
@@ -30,6 +33,22 @@ There are also some other optical effects that are often distinctive, but not lu
 
 
 ## Diaphaneity
+Diaphaneity is how light is (or isn't) transmitted through a crystal. Commonly this property is simply termed [:transparency and translucency](https://en.wikipedia.org/wiki/Transparency_and_translucency), but the term also includes the opposite of these -- opacity. Transparent minerals allow light to transmit through them without scattering, i.e., it behaves like glass and you can 'see through it'. Transluscent minerals allow light to transmit through them as well, however there is considerable scattering., i.e., you can see through it a bit, but the image is 'cloudy'. Opaque minerals do not allow light to pass through at all. Minerals may be transparent, transluscent, or opaque, depending on crystal size, presence of inclusions, or minor and trace element contents. 
+
+# Non-destructive Properties II: Close examination
+Colour, lustre, and diaphaneity are simple and effective, but they can only get you so far towards identification of a mineral species. For instance, if I described something as orange, resinous to waxy, and opaque, I could be equally be describing [:a mandarin](https://en.wikipedia.org/wiki/Mandarin_orange) or the arsenic-sulfide mineral [:orpiment](https://en.wikipedia.org/wiki/Orpiment). It would be useful to be able to distinguish the two -- one is very tasty, the other [:considerably less so](https://en.wikipedia.org/wiki/Arsenic_poisoning). 
+
+but even more powerful when combined with knowledge on how minerals grow.
+
+## Habit
+
+
+
+
+
+
+
+
 
 
 ## Cleavage/Fracture
@@ -42,15 +61,22 @@ Cleavage and Fracture are terms used to describe how the mineral *breaks*. If th
 Sometimes a crystallographic plane of weakness might arise due to structural defects in the crystal lattice. However, since this plane of weakness is not necessesarily *repeated* within the crystal structure (such as single twin plane), the crystal will not subsequently always break in the same direction. Importantly, partings may not be present in every crystal, which is why they are not considered a diagnostic feature. However, for minerals that have a solid solution series at high temperature but a solvus 
 
 ### Fracture
-It is important to note that *all* minerals will have a fracture if broken in a direction that is not aligned with a cleavage orientationbecause the minerals cleave so readily! 
+It is important to note that *all* minerals will have a fracture if broken in a direction that is not aligned with a cleavage orientation. However, fractures are not always easily seen because the minerals cleave so readily! While cleavage has both quality and orientation descriptions, due to the (semi)-random nature of fracture we do not describe the orientation of these breakages. We do still describe the quality of the break, with terms such as:
 
-
-## Hardness
-
-## Streak
+- Conchoidal fracture -- breaking in a curved and concave manner, often looking a little like the curved lines on a sea shell (hence the name, conch-oidal.) Normal glass breaks in this manner.
+- splintery
+- hackly
+- irregular -- this is what safety glass has been designed to do (so you don't get sharp flakes)
+- 
 
 ## Density
 
 ## Magnetism
 
-## Habit
+
+# Destructive Properties: The last things to test
+Often by this stage, you have identified the mineral with sufficient confidence that you don't need to go any further. Occaisionally, you need further confirmation or to discriminate between candidates with often similar physical properties. 
+
+## Streak
+
+## Hardness

@@ -3,7 +3,7 @@
 ## About this book {.unnumbered}
 This is a lab manual created using [Quarto](https://quarto.org) markdown and executable code. It contains many interactive elements and is designed to be read within a browser with an internet connection, however a static version is also available in pdf or epub format. 
 
-The online version leverages a few extra features that are not typically found in textbooks. The first of these is a range of embedded interactive elements such as quizzes, interactive plots, and other visualisation tools, made possible through the use of Quarto. These will not work in the downloadable formats. 
+The online version leverages a few extra features that are not typically found in textbooks. The first of these is a range of embedded interactive elements such as interactive plots and other visualisation tools, made possible through the use of Quarto. These will not work in the downloadable formats. 
 
 :::{.callout-note}
 # Figures in pdf and epub

@@ -36,20 +36,11 @@ There are also some other optical effects that are often distinctive, but not lu
 Diaphaneity is how light is (or isn't) transmitted through a crystal. Commonly this property is simply termed [:transparency and translucency](https://en.wikipedia.org/wiki/Transparency_and_translucency), but the term also includes the opposite of these -- opacity. Transparent minerals allow light to transmit through them without scattering, i.e., it behaves like glass and you can 'see through it'. Transluscent minerals allow light to transmit through them as well, however there is considerable scattering., i.e., you can see through it a bit, but the image is 'cloudy'. Opaque minerals do not allow light to pass through at all. Minerals may be transparent, transluscent, or opaque, depending on crystal size, presence of inclusions, or minor and trace element contents. 
 
 # Non-destructive Properties II: Close examination
-Colour, lustre, and diaphaneity are simple and effective, but they can only get you so far towards identification of a mineral species. For instance, if I described something as orange, resinous to waxy, and opaque, I could be equally be describing [:a mandarin](https://en.wikipedia.org/wiki/Mandarin_orange) or the arsenic-sulfide mineral [:orpiment](https://en.wikipedia.org/wiki/Orpiment). It would be useful to be able to distinguish the two -- one is very tasty, the other [:considerably less so](https://en.wikipedia.org/wiki/Arsenic_poisoning). 
+Colour, lustre, and diaphaneity are simple and effective, but are even more useful when combined with knowledge on how minerals grow. 
 
-but even more powerful when combined with knowledge on how minerals grow.
+<!-- For instance, if I described something as orange, resinous to waxy, and opaque, I could be equally be describing [:a mandarin](https://en.wikipedia.org/wiki/Mandarin_orange) or the arsenic-sulfide mineral [:orpiment](https://en.wikipedia.org/wiki/Orpiment). It would be useful to be able to distinguish the two -- one is very tasty, the other [:considerably less so](https://en.wikipedia.org/wiki/Arsenic_poisoning). -->
 
 ## Habit
-
-
-
-
-
-
-
-
-
 
 ## Cleavage/Fracture
 Cleavage and Fracture are terms used to describe how the mineral *breaks*. If the mineral repeatedly breaks along a plane, and always in the same orientation(s), then the broken surface is termed a [:**cleavage**](https://en.wikipedia.org/wiki/Cleavage_(crystal)). If the break is planar, but not repeatable, it is termed a *parting*. If the broken surface is irregular and not repeatable (it breaks somewhat randomly in a different direction each time) it is termed a [:**fracture**](https://en.wikipedia.org/wiki/Fracture_(mineralogy)). 
@@ -71,12 +62,20 @@ It is important to note that *all* minerals will have a fracture if broken in a 
 
 ## Density
 
-## Magnetism
-
-
 # Destructive Properties: The last things to test
 Often by this stage, you have identified the mineral with sufficient confidence that you don't need to go any further. Occaisionally, you need further confirmation or to discriminate between candidates with often similar physical properties. 
 
 ## Streak
+Streak is a modified version of colour. The way light interacts with large single crystals versus a crushed powder of that mineral is distinctly different. Streak is very useful, in that the powdered material almost always has the some colour every time. 
 
 ## Hardness
+
+# Special Properties: Niche, but useful
+Some properties are highly distinctive when they are observed in a sample, but are either rare in most minerals (and so not worth testing all the time) or require particular equipment to test. 
+
+## Magnetism
+Magnetism is a great case of a simple and effective test, but for most minerals the test will prove negative. The main magnetic minerals to look out for are magnetite and pyrrhotite, which can often be confused with hematite or pyrite, respectively. 
+
+## Fluorescence
+Some minerals [:fluorescence](https://en.wikipedia.org/wiki/Fluorescence) under UV light, and the fluorescence colour can be diagnostic for certain minerals. For instance, both eucryptite and scheelite can be found associated with quartz. It is very difficult to tell these minerals apart as they are all often colourless-white, vitreous crystals with chonchoidal fracture. However, eucryptite has a distinctive bright red short wave UV response, and sheelite has a very bright blue short wave UV response, while quartz is unresponsive to UV illumination. As fluorescence is a property that requires a UV-light source (which is dangerous to stare into,or if you leave your hands under it), it is not routinely used unless there is a specific need for it (such as exploration for W in the case of scheelite).
+

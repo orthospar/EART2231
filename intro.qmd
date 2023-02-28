@@ -30,7 +30,7 @@ In this part we provide quick navigable access to some of the tables, graphs and
 
 ### Mineralogy
 
-In this part we cover some introductory and basic principles of Mineralogy. We largely focus on crystallography and optical mineralogy, and the core concepts that you will be required to know for further Earth Science courses. Each chapter contains the requisite material for that week, i.e., Week 1 is Chapter 1. The only exception is the unnumbered chapter "Physical Properties of Minerals", which is revisionary material (assumed knowledge from EART1104 - Discovering Earth). Don't panic -- we will cover this material as a 'refresher' during the lab in Week 1.
+In this part we cover some introductory and basic principles of Mineralogy. We largely focus on crystallography and optical mineralogy, and the core concepts that you will be required to know for further Earth Science courses. Each chapter contains the requisite material for that week, i.e., Week 1 is Chapter 1. The only exception is the unnumbered chapter "Physical Properties of Minerals", which is mostly revisionary material (assumed knowledge from EART1104 - Discovering Earth). Don't panic -- we will cover this material as a 'refresher' during the lab in Week 1.
 
 ### Petrology
 

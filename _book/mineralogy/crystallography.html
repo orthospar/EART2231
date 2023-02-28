@@ -21,6 +21,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -31,7 +50,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../mineralogy/optical.html" rel="next">
 <link href="../mineralogy/physical.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -66,11 +84,11 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script async="" src="https://hypothes.is/embed.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
 <body class="nav-sidebar floating">
-
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -91,21 +109,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Applied Mineralogy and Petrology</a> 
         <div class="sidebar-tools-main">
-    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="../EART2231_IntroMinPet.pdf">
-            <i class="bi bi-bi-file-pdf pe-1"></i>
-          Download PDF
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="../EART2231_IntroMinPet.epub">
-            <i class="bi bi-bi-journal pe-1"></i>
-          Download ePub
-          </a>
-        </li>
-    </ul>
+    <a href="../EART2231_IntroMinPet.epub" title="Download ePub" class="sidebar-tool px-1"><i class="bi bi-journal"></i></a>
   <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
@@ -140,16 +144,6 @@ ul.task-list li input[type="checkbox"] {
   <a href="../quick_access/setup.html" class="sidebar-item-text sidebar-link">Microscope Setup and Use Reminders</a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../quick_access/lookup.html" class="sidebar-item-text sidebar-link">Useful Tables, Charts, and Diagrams</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../quick_access/process.html" class="sidebar-item-text sidebar-link">Process flow charts</a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -170,51 +164,6 @@ ul.task-list li input[type="checkbox"] {
   <a href="../mineralogy/crystallography.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Crystallography</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mineralogy/optical.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Optical properties of minerals</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../petrology.html" class="sidebar-item-text sidebar-link">Petrology</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../petrology/description.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Description of Igneous rocks and textures</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../petrology/classification.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Classification of Igneous Rocks</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Appendices</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Resources</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../references.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">References</span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -222,7 +171,18 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#what-is-a-mineral" id="toc-what-is-a-mineral" class="nav-link active" data-scroll-target="#what-is-a-mineral">What is a mineral?</a></li>
+  <li><a href="#the-unit-cell" id="toc-the-unit-cell" class="nav-link" data-scroll-target="#the-unit-cell">The Unit Cell</a></li>
+  <li><a href="#the-7-crystal-systems" id="toc-the-7-crystal-systems" class="nav-link" data-scroll-target="#the-7-crystal-systems">The 7 crystal systems</a></li>
+  <li><a href="#symmetry-elements" id="toc-symmetry-elements" class="nav-link" data-scroll-target="#symmetry-elements">Symmetry Elements</a></li>
+  <li><a href="#the-miller-index" id="toc-the-miller-index" class="nav-link" data-scroll-target="#the-miller-index">The Miller Index</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -244,25 +204,216 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="the-unit-cell" class="level3">
-<h3 class="anchored" data-anchor-id="the-unit-cell">The Unit Cell</h3>
-<p>2D vs 3D examples</p>
+<p>Crystallography is often viewed as a confusing or difficult subject, mostly due to the fact that so much of crystallography is about visualising objects in 3D and keeping track of the orientation of different properties. This is difficult to describe in standard textbooks and other 2D media, and is much easier to do in person with real objects in your hands.</p>
+<section id="what-is-a-mineral" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-mineral">What is a mineral?</h2>
+<p>The technical definition of a <a href="https://en.wikipedia.org/wiki/Mineral">:mineral</a>, as formally decided by the International Mineralogical Association (<a href="https://mineralogy-ima.org/">IMA</a>), can be read as described in <span class="citation" data-cites="nickel1995">Nickel (<a href="#ref-nickel1995" role="doc-biblioref">1995</a>)</span>. Simply put, a mineral is a chemical substance with a defined ordered repeating structure.</p>
+<p>This useful concept allows us to distinguish between minerals that have the same chemistry but different structures, or vice versa. For instance, SiO<sub>2</sub> can crystallise in multiple different crystal structures – Quartz (SiO<sub>2</sub>) is a common mineral formed in a range of environments on Earth, but stichovite (SiO<sub>2</sub>) is a very high pressure and temperature mineral found only in meteorite impact craters. As we cannot tell these minerals apart chemically, we must use other properties that arise from the <em>structure</em> of these minerals to distinguish them.</p>
 </section>
-<section id="symmetry-elements" class="level3">
-<h3 class="anchored" data-anchor-id="symmetry-elements">Symmetry Elements</h3>
-<p>Mirror Planes Rotation Axes Center of Inversion</p>
-<p>(Extension: Other elements)</p>
+<section id="the-unit-cell" class="level2">
+<h2 class="anchored" data-anchor-id="the-unit-cell">The Unit Cell</h2>
+<p>One of the technical definitions of a mineral is that it is <em>crystalline</em>, meaning that it has a defined, repeating <a href="https://en.wikipedia.org/wiki/Crystal_structure">:Crystal Structure</a>. The smallest arrangement of atoms that can describe the entire structure of a mineral is called the <a href="https://en.wikipedia.org/wiki/Unit_cell">:Unit Cell</a>.</p>
+<p>The unit cell can be thought of as the ‘lego brick’ for that mineral. At least one full stoichiometric set of atoms that make up that mineral are arranged in some manner within the unit cell (in often complicated arrangements), but the unit cells themselves can only stack together in a limited number of ways.</p>
+<p>In order to describe the size and shape of the unit cell for a given mineral, we could use normal cartesian x-y-z coordinates. However, since some unit cells are not always cubes or rectangular prisms (they can have angles other than 90°) we instead describe the three edge <em>lengths</em> and call these directions the <strong>a</strong>-<strong>b</strong>-<strong>c</strong> axes.</p>
+<p>As mentioned, the angles between the <strong>a</strong>-<strong>b</strong>-<strong>c</strong> axes are not always 90°. We use the greek letters <span class="math inline">\(\alpha\)</span> - <span class="math inline">\(\beta\)</span> - <span class="math inline">\(\gamma\)</span> to denote these angles. The easiest way to remember which angle is which is that it is always the missing greek letter from the roman alphabet pair:</p>
+<ul>
+<li>The angle between <strong>a</strong> and <strong>b</strong> is <span class="math inline">\(\gamma\)</span></li>
+<li>The angle between <strong>a</strong> and <strong>c</strong> is <span class="math inline">\(\beta\)</span></li>
+<li>The angle between <strong>b</strong> and <strong>c</strong> is <span class="math inline">\(\alpha\)</span></li>
+</ul>
 </section>
-<section id="crystal-lattice" class="level3">
-<h3 class="anchored" data-anchor-id="crystal-lattice">Crystal Lattice</h3>
-<p>Application of symmetry elements to the unit cell - build a repeating structure in 2D and 3D</p>
+<section id="the-7-crystal-systems" class="level2">
+<h2 class="anchored" data-anchor-id="the-7-crystal-systems">The 7 crystal systems</h2>
+<p>Despite the large possible variation in different unit cell dimensions, they can all be grouped into one of 32 different crystal classes, themselves one of 7 different crystal systems. The 7 different crystal systems broadly define many of the physical and optical properties of minerals, so they are important to learn and recognise. The 32 crystal classes require a more advanced treatment than what we cover here – it is sufficient to simply know that they <em>exist</em>.</p>
+<table class="table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 27%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Crystal family</strong></th>
+<th><strong>Crystal system</strong></th>
+<th><strong>Point group / Crystal class</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Triclinic</td>
+<td></td>
+<td>pedial<br>
+pinacoidal</td>
+</tr>
+<tr class="even">
+<td>Monoclinic</td>
+<td></td>
+<td>sphenoidal<br>
+domatic<br>
+prismatic</td>
+</tr>
+<tr class="odd">
+<td>Orthorhombic</td>
+<td></td>
+<td>rhombic-disphenoidal<br>
+rhombic-pyramidal<br>
+rhombic-dipyramidal<br>
+</td>
+</tr>
+<tr class="even">
+<td>Tetragonal</td>
+<td></td>
+<td>tetragonal-pyramidal<br>
+tetragonal-disphenoidal<br>
+tetragonal-dipyramidal<br>
+tetragonal-trapezohedral<br>
+ditetragonal-pyramidal<br>
+tetragonal-scalenohedral<br>
+ditetragonal-dipyramidal<br>
+</td>
+</tr>
+<tr class="odd">
+<td>Hexagonal</td>
+<td>Trigonal</td>
+<td>trigonal-pyramidal<br>
+rhombohedral<br>
+trigonal-trapezohedral<br>
+ditrigonal-pyramidal<br>
+ditrigonal-scalenohedral<br>
+</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Hexagonal</td>
+<td>hexagonal-pyramidal<br>
+trigonal-dipyramidal<br>
+hexagonal-dipyramidal<br>
+hexagonal-trapezohedral<br>
+dihexagonal-pyramidal<br>
+ditrigonal-dipyramidal<br>
+dihexagonal-dipyramidal<br>
+</td>
+</tr>
+<tr class="odd">
+<td>Isometric</td>
+<td></td>
+<td>tetartoidal<br>
+diploidal<br>
+gyroidal<br>
+hextetrahedral<br>
+hexoctahedral<br>
+</td>
+</tr>
+</tbody>
+</table>
+<section id="further-details" class="level3">
+<h3 class="anchored" data-anchor-id="further-details">Further details:</h3>
+<p><a href="https://www.mindat.org/article.php/2823/Crystallography%3A+The+Isometric+System">Isometric System</a></p>
+<p><a href="https://www.mindat.org/article.php/2874/Crystallography%3A+The+Tetragonal+System">Tetragonal System</a></p>
+<p><a href="https://www.mindat.org/article.php/2793/Crystallography%3A+The+Orthorhombic+System">Orthorhombic System</a></p>
+<p><a href="https://www.mindat.org/article.php/2787/Crystallography%3A+The+Monoclinic+System">Monoclinic System</a></p>
+<p><a href="https://www.mindat.org/article.php/2879/Crystallography%3A+The+Triclinic+System">Triclinic System</a></p>
+<p><a href="https://www.mindat.org/article.php/2810/Crystallography%3A+The+Trigonal+System">Trigonal System</a></p>
+<p><a href="https://www.mindat.org/article.php/2850/Crystallography%3A+The+Hexagonal+System">Hexagonal System</a></p>
 </section>
-<section id="the-7-crystal-systems" class="level3">
-<h3 class="anchored" data-anchor-id="the-7-crystal-systems">The 7 crystal systems</h3>
-<p>Recognition based on symmetry</p>
-<p>(Extension: Bravais Lattices)</p>
+</section>
+<section id="symmetry-elements" class="level2">
+<h2 class="anchored" data-anchor-id="symmetry-elements">Symmetry Elements</h2>
+<p>Symmetry elements are discrete mathematical translation and rotation operations that allow a unit cell to tesselate without any overlap into a infinitely repeating crystal structure. There are 3 main symmetry elements to be aware of:</p>
+<ol type="1">
+<li><p>Mirror Planes These are quite simply an imaginary plane that cuts a crystal in half, where each half is a mirror image of the other.</p></li>
+<li><p>Rotation Axes These are an imaginary axis about which the crystal is rotated, and the order of symmetry is a count of how many times the mineral rotates through an identical starting arrangement through 360°. The possible orders of rotation axes are 2-fold, 3-fold, 4-fold and 6-fold.</p></li>
+<li><p>Center of Inversion A center of inversion is an imaginary point in the exact middle of the crystal, through which a point, edge, or face of the crystal may be projected through to the other side. The most useful observation here is usually the <em>absence</em> of a centre of inversion.</p></li>
+</ol>
+<p>The 7 crystal systems can be defined by their unit cell dimensions and the symmetry operations that are possible for that system. These are as follows:</p>
+<table class="table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 20%">
+<col style="width: 18%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>System</strong></th>
+<th><strong>Axis lengths</strong></th>
+<th><strong>Axis angles</strong></th>
+<th><strong>Minimum symmetry requirements</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Isometric</td>
+<td>a=b=c</td>
+<td>α=β=γ=90°</td>
+<td>Four 3-fold rotation axes</td>
+</tr>
+<tr class="even">
+<td>Tetragonal</td>
+<td>a=b≠c</td>
+<td>α=β=γ=90°</td>
+<td>One 4-fold rotation axis</td>
+</tr>
+<tr class="odd">
+<td>Orthorhombic</td>
+<td>a≠b≠c</td>
+<td>α=β=γ=90°</td>
+<td>Three 2-fold rotation axes<br>
+<em>OR</em><br>
+2 mirror planes and a 2-fold rotation axis</td>
+</tr>
+<tr class="even">
+<td>Monoclinic</td>
+<td>a≠b≠c</td>
+<td>α=γ=90°, β≠90°</td>
+<td>One 2-fold rotation axis<br>
+<em>OR</em><br>
+1 mirror plane</td>
+</tr>
+<tr class="odd">
+<td>Triclinic</td>
+<td>a≠b≠c</td>
+<td>α≠β≠γ≠90°</td>
+<td>None</td>
+</tr>
+<tr class="even">
+<td>Trigonal</td>
+<td>a=b≠c (a1=a2=a3≠c)</td>
+<td>α=β=90°, γ=120°</td>
+<td>One 3-fold rotation axis</td>
+</tr>
+<tr class="odd">
+<td>Hexagonal</td>
+<td>a=b≠c (a1=a2=a3≠c)</td>
+<td>α=β=90, γ=120°</td>
+<td>One 6-fold rotation axis</td>
+</tr>
+</tbody>
+</table>
+<section id="further-details-1" class="level3">
+<h3 class="anchored" data-anchor-id="further-details-1">Further Details:</h3>
+<p><a href="https://www.mindat.org/article.php/2721/Determining+Symmetry+of+Crystals%3A+An+Introduction+">Crystal Symmetry</a></p>
+</section>
+</section>
+<section id="the-miller-index" class="level2">
+<h2 class="anchored" data-anchor-id="the-miller-index">The Miller Index</h2>
+<p>A 3-dimensional crystal may have many different crystal faces, edges, and points. The <a href="https://en.wikipedia.org/wiki/Miller_index">:Miller Index</a> is a useful descriptive system based upon the unit cell dimensions. For a given unit cell <strong>a</strong>-<strong>b</strong>-<strong>c</strong>, we can define coordinates <em>h</em>-<em>k</em>-<em>l</em> such that the plane (100) (read as one-zero-zero, where <em>h</em> = 1, <em>k</em> = 0, <em>l</em> = 0) is perpendicular to the <strong>a</strong>-axis but parallel to the <strong>b</strong> and <strong>c</strong> axes.</p>
+<p>The correct mathematical description of Miller Indicies is often confusing, but a simple way to think of it is <em>how many times does the plane intercet the unit cell dimensions?</em> In our example above, (100), the plane cuts the <strong>a</strong>-axis only once, and doesn’t cut the other two axes (hence parallel to <strong>b</strong> and <strong>c</strong>). If the miller index was (210), the plane cuts the unit cell twice along the <strong>a</strong>-axis dimension (i.e., it cuts it in half) for every one time it cuts the unit cell along the <strong>b</strong>-axis dimension, and still remains parallel to the <strong>c</strong>-axis dimension.</p>
+<p>The other important feature of the Miller Index is the use of brackets. Curved brackets () denote a a single plane, such as (100), whereas curled brackets {} denote a <em>set</em> of planes related by crystal symmetry, such as {100} which means the full set of 6 faces perpendicular to each axis. Finally, square brackets [] denote a direction, such that [100] is equivalent to the <strong>a</strong>-axis.</p>
+<section id="further-details-2" class="level3">
+<h3 class="anchored" data-anchor-id="further-details-2">Further Details:</h3>
+<p><a href="https://www.mindat.org/article.php/2727/Miller+Indices">Miller Index</a></p>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-nickel1995" class="csl-entry" role="doc-biblioentry">
+Nickel, Ernest H. 1995. <span>“Definition of a Mineral.”</span> <em>Mineralogical Magazine</em> 59 (397): 767–68.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -607,9 +758,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../mineralogy/optical.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Optical properties of minerals</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

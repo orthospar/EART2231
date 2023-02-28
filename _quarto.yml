@@ -5,7 +5,7 @@ book:
   title: "Applied Mineralogy and Petrology"
   subtitle: "A Lab Manual for EART2231 at the University of Western Australia"
   output-file: "EART2231_IntroMinPet"
-  author: ["Jason Bennett", "Marco Fiorentini", "Anthony Kemp"]
+  author: ["Jason Bennett", "Marco Fiorentini", "Anthony Kemp", "Charter Mathison"]
   search: true
   date: today
   date-format: "DD MMM YYYY"
@@ -13,29 +13,29 @@ book:
   description: |
     An online resource for the Mineralogy and Petrology component of EART2231 - Earth Materials - at the University of Western Australia.
   license: CC BY-SA
-  downloads: [pdf, epub]
+  downloads: [epub]
   chapters:
     - index.qmd
     - intro.qmd
     - part: "Quick Access"
       chapters:
         - quick_access/setup.qmd
-        - quick_access/lookup.qmd
-        - quick_access/process.qmd
+      #  - quick_access/lookup.qmd
+      #  - quick_access/process.qmd
     - part: mineralogy.qmd
       chapters:
         - mineralogy/physical.qmd
         - mineralogy/crystallography.qmd 
-        - mineralogy/optical.qmd
-    - part: petrology.qmd
-      chapters: 
-        - petrology/description.qmd
-        - petrology/classification.qmd
+      #  - mineralogy/optical.qmd
+   # - part: petrology.qmd
+   #   chapters: 
+   #     - petrology/description.qmd
+      #  - petrology/classification.qmd
       #  - petrology/phase_diagrams.qmd
       #  - petrology/processes.qmd
-  appendices: 
-    - resources.qmd
-    - references.qmd
+  #appendices: 
+  #  - resources.qmd
+  #  - references.qmd
 
 number-depth: 1
 toc-title: "Contents"

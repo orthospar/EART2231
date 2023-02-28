@@ -1,23 +1,135 @@
 # Crystallography
+Crystallography is often viewed as a confusing or difficult subject, mostly due to the fact that so much of crystallography is about visualising objects in 3D and keeping track of the orientation of different properties. This is difficult to describe in standard textbooks and other 2D media, and is much easier to do in person with real objects in your hands.
 
-### The Unit Cell
+## What is a mineral?
+The technical definition of a [:mineral](https://en.wikipedia.org/wiki/Mineral), as formally decided by the International Mineralogical Association ([IMA](https://mineralogy-ima.org/)), can be read as described in @nickel1995. Simply put, a mineral is a chemical substance with a defined ordered repeating structure. 
 
-2D vs 3D examples
+This useful concept allows us to distinguish between minerals that have the same chemistry but different structures, or vice versa. For instance, SiO~2~ can crystallise in multiple different crystal structures -- Quartz (SiO~2~) is a common mineral formed in a range of environments on Earth, but stichovite (SiO~2~) is a very high pressure and temperature mineral found only in meteorite impact craters. As we cannot tell these minerals apart chemically, we must use other properties that arise from the *structure* of these minerals to distinguish them.
 
-### Symmetry Elements
+## The Unit Cell
+One of the technical definitions of a mineral is that it is *crystalline*, meaning that it has a defined, repeating [:Crystal Structure](https://en.wikipedia.org/wiki/Crystal_structure). The smallest arrangement of atoms that can describe the entire structure of a mineral is called the [:Unit Cell](https://en.wikipedia.org/wiki/Unit_cell). 
 
-Mirror Planes
-Rotation Axes
-Center of Inversion
+The unit cell can be thought of as the 'lego brick' for that mineral. At least one full stoichiometric set of atoms that make up that mineral are arranged in some manner within the unit cell (in often complicated arrangements), but the unit cells themselves can only stack together in a limited number of ways. 
 
-(Extension: Other elements)
+In order to describe the size and shape of the unit cell for a given mineral, we could use normal cartesian x-y-z coordinates. However, since some unit cells are not always cubes or rectangular prisms (they can have angles other than 90°) we instead describe the three edge *lengths* and call these directions the **a**-**b**-**c** axes. 
 
-### Crystal Lattice
+As mentioned, the angles between the **a**-**b**-**c** axes are not always 90°. We use the greek letters $\alpha$ - $\beta$ - $\gamma$ to denote these angles. The easiest way to remember which angle is which is that it is always the missing greek letter from the roman alphabet pair:
 
-Application of symmetry elements to the unit cell - build a repeating structure in 2D and 3D
+ - The angle between **a** and **b** is $\gamma$
+ - The angle between **a** and **c** is $\beta$
+ - The angle between **b** and **c** is $\alpha$ 
 
-### The 7 crystal systems
+## The 7 crystal systems
+Despite the large possible variation in different unit cell dimensions, they can all be grouped into one of 32 different crystal classes, themselves one of 7 different crystal systems. The 7 different crystal systems broadly define many of the physical and optical properties of minerals, so they are important to learn and recognise. The 32 crystal classes require a more advanced treatment than what we cover here -- it is sufficient to simply know that they *exist*.
 
-Recognition based on symmetry
 
-(Extension: Bravais Lattices)
++--------------------+--------------------+---------------------------------+
+| **Crystal family** | **Crystal system** | **Point group / Crystal class** |
++====================+====================+=================================+
+|Triclinic           |                    | pedial\                         |
+|                    |                    | pinacoidal                      |
++--------------------+--------------------+---------------------------------+
+|Monoclinic          |                    | sphenoidal\                     |
+|                    |                    | domatic\                        |
+|                    |                    | prismatic                       |
++--------------------+--------------------+---------------------------------+
+|Orthorhombic        |                    | rhombic-disphenoidal\           |
+|                    |                    | rhombic-pyramidal\              |
+|                    |                    | rhombic-dipyramidal\            |
++--------------------+--------------------+---------------------------------+
+|Tetragonal          |                    | tetragonal-pyramidal\           |
+|                    |                    | tetragonal-disphenoidal\        |
+|                    |                    | tetragonal-dipyramidal\         |
+|                    |                    | tetragonal-trapezohedral\       |
+|                    |                    | ditetragonal-pyramidal\         |
+|                    |                    | tetragonal-scalenohedral\       |
+|                    |                    | ditetragonal-dipyramidal\       |
++--------------------+--------------------+---------------------------------+
+|Hexagonal           |Trigonal            | trigonal-pyramidal\             |
+|                    |                    | rhombohedral\                   |
+|                    |                    | trigonal-trapezohedral\         |
+|                    |                    | ditrigonal-pyramidal\           |
+|                    |                    | ditrigonal-scalenohedral\       |
++--------------------+--------------------+---------------------------------+
+|                    |Hexagonal           | hexagonal-pyramidal\            |
+|                    |                    | trigonal-dipyramidal\           |
+|                    |                    | hexagonal-dipyramidal\          |
+|                    |                    | hexagonal-trapezohedral\        |
+|                    |                    | dihexagonal-pyramidal\          |
+|                    |                    | ditrigonal-dipyramidal\         |
+|                    |                    | dihexagonal-dipyramidal\        |
++--------------------+--------------------+---------------------------------+
+|Isometric           |                    | tetartoidal\                    |
+|                    |                    | diploidal\                      |
+|                    |                    | gyroidal\                       |
+|                    |                    | hextetrahedral\                 |
+|                    |                    | hexoctahedral\                  |
++--------------------+--------------------+---------------------------------+
+
+### Further details:
+[Isometric System](https://www.mindat.org/article.php/2823/Crystallography%3A+The+Isometric+System)
+
+[Tetragonal System](https://www.mindat.org/article.php/2874/Crystallography%3A+The+Tetragonal+System)
+
+[Orthorhombic System](https://www.mindat.org/article.php/2793/Crystallography%3A+The+Orthorhombic+System)
+
+[Monoclinic System](https://www.mindat.org/article.php/2787/Crystallography%3A+The+Monoclinic+System)
+
+[Triclinic System](https://www.mindat.org/article.php/2879/Crystallography%3A+The+Triclinic+System)
+
+[Trigonal System](https://www.mindat.org/article.php/2810/Crystallography%3A+The+Trigonal+System)
+
+[Hexagonal System](https://www.mindat.org/article.php/2850/Crystallography%3A+The+Hexagonal+System)
+
+## Symmetry Elements
+Symmetry elements are discrete mathematical translation and rotation operations that allow a unit cell to tesselate without any overlap into a infinitely repeating crystal structure. There are 3 main symmetry elements to be aware of:
+
+ 1. Mirror Planes
+These are quite simply an imaginary plane that cuts a crystal in half, where each half is a mirror image of the other. 
+ 
+ 2. Rotation Axes
+These are an imaginary axis about which the crystal is rotated, and the order of symmetry is a count of how many times the mineral rotates through an identical starting arrangement through 360°. The possible orders of rotation axes are 2-fold, 3-fold, 4-fold and 6-fold. 
+ 
+ 3. Center of Inversion
+A center of inversion is an imaginary point in the exact middle of the crystal, through which a point, edge, or face of the crystal may be projected through to the other side. The most useful observation here is usually the *absence* of a centre of inversion.
+
+The 7 crystal systems can be defined by their unit cell dimensions and the symmetry operations that are possible for that system. These are as follows:
+
++--------------+--------------------+------------------+-------------------------------------------+
+| **System**   | **Axis lengths**   | **Axis angles**  | **Minimum symmetry requirements**         |
++==============+====================+==================+===========================================+
+| Isometric    | a=b=c              | α=β=γ=90°        | Four 3-fold rotation axes                 |
++--------------+--------------------+------------------+-------------------------------------------+
+| Tetragonal   | a=b≠c              | α=β=γ=90°        | One 4-fold rotation axis                  |
++--------------+--------------------+------------------+-------------------------------------------+
+| Orthorhombic | a≠b≠c              | α=β=γ=90°        | Three 2-fold rotation axes\               |
+|              |                    |                  |          *OR* \                           |
+|              |                    |                  | 2 mirror planes and a 2-fold rotation axis|
++--------------+--------------------+------------------+-------------------------------------------+
+| Monoclinic   | a≠b≠c              | α=γ=90°, β≠90°   | One 2-fold rotation axis  \               |
+|              |                    |                  |              *OR* \                       |
+|              |                    |                  |       1 mirror plane                      |
++--------------+--------------------+------------------+-------------------------------------------+
+| Triclinic    | a≠b≠c              | α≠β≠γ≠90°        | None                                      |
++--------------+--------------------+------------------+-------------------------------------------+
+| Trigonal     | a=b≠c (a1=a2=a3≠c) | α=β=90°, γ=120°  | One 3-fold rotation axis                  |
++--------------+--------------------+------------------+-------------------------------------------+
+| Hexagonal    | a=b≠c (a1=a2=a3≠c) | α=β=90, γ=120°   | One 6-fold rotation axis                  |
++--------------+--------------------+------------------+-------------------------------------------+
+
+
+### Further Details: 
+[Crystal Symmetry](https://www.mindat.org/article.php/2721/Determining+Symmetry+of+Crystals%3A+An+Introduction+)
+
+## The Miller Index
+A 3-dimensional crystal may have many different crystal faces, edges, and points. The [:Miller Index](https://en.wikipedia.org/wiki/Miller_index) is a useful descriptive system based upon the unit cell dimensions. For a given unit cell **a**-**b**-**c**, we can define coordinates *h*-*k*-*l* such that the plane (100) (read as one-zero-zero, where *h* = 1, *k* = 0, *l* = 0) is perpendicular to the **a**-axis but parallel to the **b** and **c** axes. 
+
+The correct mathematical description of Miller Indicies is often confusing, but a simple way to think of it is *how many times does the plane intercet the unit cell dimensions?* In our example above, (100), the plane cuts the **a**-axis only once, and doesn't cut the other two axes (hence parallel to **b** and **c**). If the miller index was (210), the plane cuts the unit cell twice along the **a**-axis dimension (i.e., it cuts it in half) for every one time it cuts the unit cell along the **b**-axis dimension, and still remains parallel to the **c**-axis dimension. 
+
+The other important feature of the Miller Index is the use of brackets. Curved brackets () denote a a single plane, such as (100), whereas curled brackets {} denote a *set* of planes related by crystal symmetry, such as {100} which means the full set of 6 faces perpendicular to each axis. Finally, square brackets [] denote a direction, such that [100] is equivalent to the **a**-axis.
+
+
+### Further Details:
+[Miller Index](https://www.mindat.org/article.php/2727/Miller+Indices)
+
+## References

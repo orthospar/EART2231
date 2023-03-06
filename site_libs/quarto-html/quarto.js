@@ -614,6 +614,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
       manageTransition("TOC", slow);
       manageTransition("quarto-sidebar", slow);
     };
+
     const readerMode = !isReaderMode();
     setReaderModeValue(readerMode);
 
@@ -622,7 +623,6 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
       slowTransition(readerMode);
     }
     highlightReaderToggle(readerMode);
-    hideOverlappedSidebars();
 
     // If we're exiting reader mode, restore the non-slow transition
     if (!readerMode) {
@@ -660,9 +660,6 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   };
   let localReaderMode = null;
 
-  const tocOpenDepthStr = tocEl?.getAttribute("data-toc-expanded");
-  const tocOpenDepth = tocOpenDepthStr ? Number(tocOpenDepthStr) : 1;
-
   // Walk the TOC and collapse/expand nodes
   // Nodes are expanded if:
   // - they are top level
@@ -688,13 +685,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 
     // Process the collapse state if this is an UL
     if (el.tagName === "UL") {
-      if (tocOpenDepth === -1 && depth > 1) {
-        el.classList.add("collapse");
-      } else if (
-        depth <= tocOpenDepth ||
-        hasActiveChild ||
-        prevSiblingIsActiveLink(el)
-      ) {
+      if (depth === 1 || hasActiveChild || prevSiblingIsActiveLink(el)) {
         el.classList.remove("collapse");
       } else {
         el.classList.add("collapse");

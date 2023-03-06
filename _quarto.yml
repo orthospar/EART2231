@@ -26,7 +26,7 @@ book:
       chapters:
         - mineralogy/physical.qmd
         - mineralogy/crystallography.qmd 
-      #  - mineralogy/optical.qmd
+        - mineralogy/optical.qmd
    # - part: petrology.qmd
    #   chapters: 
    #     - petrology/description.qmd

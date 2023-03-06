@@ -1,41 +1,101 @@
 
 # Optical properties of minerals
 
-We recommend the open access textbook ["Guide to Thin Section Microscopy"](http://www.minsocam.org/msa/OpenAccess_publications/Guide_Thin_Sctn_Mcrscpy_index.html) by Raith, Raase, and Reinhardt (2012) for ongoing use as a detailed reference companion. This textbook is worth getting printed and bound by a high quality professional printing service.
+We recommend the open access textbook ["Guide to Thin Section Microscopy"](http://www.minsocam.org/msa/OpenAccess_publications/Guide_Thin_Sctn_Mcrscpy_index.html) by @Raith2012 for ongoing use as a detailed reference companion. This textbook is worth getting printed and bound by a high quality professional printing service (such as Uni Print).
 
 ## Plane Polarised Light
+There are many observations we can make of the minerals visible in the thin section under illumination by Plane Polarised Light (PPL). Start by trying to estimate how many *different* phases (minerals, glass, etc) you have in your thin section, and then pick *just one* of these to focus on at a time. Make a record of each phase and note your observations.
 
-### Opacity/Transparency
+### Diaphaneity (Opacity/Transparency)
+The first observation for any phase is if it is opaque or not. Opaque minerals do not transmit light in thin section. At this point, if the phase is opaque, we can go no further without using Reflected Light Microscopy (a technique we will introduce in 3rd Year courses, and which your microscopes are not equipped for in any case). If the opaque phase has a distinct crystal shape (such as euhedral 'squares') then that is worth recording (see @sec-growthfeatures "Growth Features" below.). You may also try using your hand lens to look at the surface of the mineral and see if it has a characteristic lustre or colour. 
+
+If the mineral is transparent, we are in luck, and can continue to apply transmitted light microscopy techniques. What fun!
 
 ### Colour
+Note if there is any distinctive colour to the phase under PPL. Only minerals with strong colouration in hand specimen show colour in thin section, many are colourless. For instance, olivine, which is a distinctive beautiful green in hand specimen, is completely colourless in thin section, whereas biotite, which is often dark and black in hand specimen, is often a red-brown colour in thin section.
+
+Further details are on pages 68--69 of @Raith2012.
 
 #### Pleochroism
+If the mineral *is* coloured, try rotating the stage to see if the colour changes. It may change between two distinct colours, such as red to brown pleochroism, or it may change between being coloured and colourless, such as green to colourless pleochroism. The effect can be *very* subtle, and often only the strongest pleochroism is noticed at first. Often it is prudent to re-check for pleochroism once further observations have been made.
+
+Further details and examples are in @Raith2012 on pages 70--76.
 
 ### Relief
+Relief is an effect that occurs at the grain boundary and along internal fractures in a mineral. It occurs due to refraction across the grain boundary between two phases of different refractive indicies. The appearance of relief in thin section can be compared to 'line thickness'. Low relief means that the refractive indicies between the two phases are similar, and the boundary (line) between them is thin and feint. If you had to choose a pencil to draw this boundary, you might select a fine 2H mechanical pencil. High relief means that the refractive indicies between the two phases are very different, and the boundary (line) between them is thick and **bold**. You might select a well-used 2B pencil to draw this boundary. 
+
+#### Becke Line Test
+As the relief of a mineral is the difference in refractive indicies between two phases, relief can be positive or negative. If you have one correctly identified mineral in contact with an unknown mineral, you can calculate if the refractive index is higher (positive relief) or lower (negative relief) in the unknown when compared to the known mineral. With multiple minerals, the refractive index can be narrowed down quite significantly. 
+
+To perform the Becke Line test, focus the grain boundary such that the boundary appears uniform. Then, raise or lower the stage slightly (with the fine focus) and watch to see if a bright line of light moves into or out of the unknown mineral. If the stage is lowered, the bright line will move into the phase of higher refractive index. If the stage is raised, the bright line will move into the phase of lower refractive index.
+
+Further descriptions of relief can be found on page 77, and the Becke Line is further explained on page 79 of @Raith2012.
 
 ### Cleavage and Fracture
+Looking at the internal breaks of the mineral, determine if they are trying to follow a specific direction or not. Perfect cleavage will appear as many parallel thin lines across the mineral, ranging to poor cleavage where some fractures might only seem to have a preferred orientation. Fracture will appear as random breakages across the crystal, and are often curved (conchoidal fracture).
+
+If cleavage is observed, note how many cleavage directions can be seen and at what angles they intersect (you can measure the angles using the gradations on your rotating stage). Bear in mind that the cleavages observed in a single grain depend on the orientation of that crystal. In a pyroxene for example, one parallel cleavage might be observed if the crystal is sliced parallel to the c-axis (parallel to [001]), but two cleavages intersecting at ~90° might be observed if the crystal is sliced perpendicular to the c-axis (perpendicular to [001]). Make sure you examine multiple crystals to get a range of possible viewing angles. 
+
+Further details and example images are in @Raith2012 pages 40-41.
  
-### Growth Features
+### Growth Features {#sec-growthfeatures}
+The final observation under PPL examines features that occur as a result of how the crystal grew. These observations give us some useful information that can help ID the mineral, but often the most useful information gleaned here is *paragenesis* -- the order in which each mineral grew in the rock and how each mineral relates to one another. We will come back to this concept later (it is the main focus in the Petrology section).
 
 #### Habit
+In thin section, we use similar jargon and concepts as what we use to describe the habit of minerals in hand sample.
 
+For single crystals, we can use the terms *equant*, *bladed*, *platy*, etc to describe the overall shape. We also have the more generalised terms: 
+
+- **Euhedral** (or Idiomorphic) -- the crystal has all crystal faces fully formed, it is the ideal shape for that mineral.
+- **Subhedral** (or Subidiomorphic) -- the crystal has some, but not all, crystal faces formed. 
+- **Anhedral** (or Anidiomorphic) -- none of the crystal's ideal faces have formed, the shape is controlled only by the available space between other crystals.
+
+For groups of crystals, terms like *radial* and *botryoidal* are also still used. See @Raith2012 pages 31--39 for further details and example images.
 
 #### Zonation
+As crystals grow, chemical changes in the surrounding growth medium are often reflected as chemical changes in the crystal. This usually appears as **concentric** banding. Depending on the mineral, this may appear as changes in colouration, pleochroism, or most typically as changes in interference colours and extinction angles (see below, and @Raith2012 page 97). Other forms of growth zonation include **oscillatory** zonation (very fine bands, often seen as part of larger concentric bands) and **sector** zonation (different crystal faces pick up different trace elements, and have different colours).
 
 ## Cross Polarised Light
 The upper polarisation plate (the anlyser) is oriented perpendicular to the orienation direction of the lower polarisation plate. Since the lower polariser is, by convention, orientated in an E-W direction (or left-right), the upper polariser is hence oriented in a N-S direction (or up-down). If no thin section is inserted, then the view through the oculars should be **dark/black**.  
 
 ### Birefringence
-Upon insertion of the upper polarisation plate (the analyser) the most striking observation is the sudden bright colourful display of [:Interference Colours](https://en.wikipedia.org/wiki/Interference_colour_chart), particularly in minerals such as olivine. Interference colours are only visible in *anisotropic minerals* and arise as a function of thin section thickness and the [:Birefringence](https://en.wikipedia.org/wiki/Birefringence) of the mineral. 
-
+Upon insertion of the upper polarisation plate (the analyser) the most striking observation is the sudden bright colourful display of [:Interference Colours](https://en.wikipedia.org/wiki/Interference_colour_chart), particularly in minerals such as olivine. Interference colours are only visible in *anisotropic minerals* and arise as a function of thin section thickness and the [:Birefringence](https://en.wikipedia.org/wiki/Birefringence) of the mineral. Using a Michel-Lévy chart or the newer Raith-Sørensen chart (pages 92 and 93 of @Raith2012), the maximum birefringence of a mineral can be identified by matching the observed interference colour. The maximum birefringes is characteristic for many minerals, and allows further descrimination between possible candidates. 
 
 ::: {.content-hidden unless-format="html"}
+
 ```{r, echo=FALSE, message=FALSE}
+if (!file.exists("int_spectra.csv")) {
 library(reshape)
+library(readr)
 library(dplyr)
 library(pavo)
 
-interference <- function(wl, biref){ #function to calculate interference colours
+bb <- function(lambda, TK){
+  #Planck's law of black-body radiation, where:
+  #lambda = wavelength (nm)
+  #TK = temperature in Kelvin
+  
+  #convert temp from nm to m
+  lambda <- lambda*1e-9
+  
+  #Constants:
+  c <- 299792458 #speed of light (m/s), SI units
+  h <- 6.626e-34 #plank constant (J/Hz), SI units
+  k <- 1.38e-23 #boltzmann constant (J/K), SI units 
+  
+  radiance <- ((2*h*c^2)/(lambda^5))*(1/(exp((h*c)/(lambda*k*TK))-1))
+  return(radiance)
+}
+
+#function to normalise the spectra to range 0:1
+norm_func <- function(x){
+  x<-x/max(x)
+  return(x)
+}
+
+#function to calculate interference colours
+#uses a look-up table calculated from function bb() defined above
+interference <- function(wl, biref, TK){ #function to calculate interference colours for a given black-body radiation curve
   c <- 299792458 #speed of light (nm/ns), SI units
   t <- seq(0,0.01,0.00001) #time series
   thin <- 30000 #thin section thickness, in nm
@@ -45,28 +105,41 @@ interference <- function(wl, biref){ #function to calculate interference colours
     RId <- RI+b #maximum RI
     Retd <- (((thin*RId)/425)-((thin*RI)/425))*425 #using 425nm as wavelength
     n <- vector() #create empty vector
-      for(l in wl){#for each wavelength;
-        f <- (c/l)/1e3 #convert to frequency, in THz
-        phi <- 2*pi*(Retd/l) #Retardation, in multiples of pi/2 (half wavelengths)
-        n <- c(n, #append to stored vector the:
-              (max(sin(2*pi*f*t)- #max of difference between the O-wave
-                   sin((2*pi*f*t)-phi)) #and the E-wave 
-           ))
-      }
+    for(l in wl){#for each wavelength;
+      f <- (c/l)/1e3 #convert to frequency, in THz
+      phi <- 2*pi*(Retd/l) #Retardation, in multiples of pi/2 (half wavelengths)
+      n <- c(n, #append to stored vector the:
+             (max(sin(2*pi*f*t)- #max of difference between the O-wave
+                    sin((2*pi*f*t)-phi))*#and the E-wave
+                bb_spectra[which(rownames(bb_spectra)==l),which(colnames(bb_spectra)==TK)]
+              #normalised to bb-radiation curve
+             ))
+    }
     m <- cbind(m, n)
   }
   
   return(m)
   
 }
-wl_range <- 300:700 #wavelength, in nm
-biref_range <- seq(0.0005,0.2, 0.0005) #birefringence
 
-int_spectra <- round(interference(wl_range, biref_range),2)/2
+# calculate bb_spectra lookup table
+TK_range <- seq(1500,10000,100)
+lambda_range <- seq(200,900)
+
+bb_spectra <- data.frame(outer(lambda_range, TK_range, bb))%>%
+  transmute(across(everything(), norm_func))
+colnames(bb_spectra) <- c(TK_range)
+rownames(bb_spectra) <- c(lambda_range)
+#bb_spectra <- bind_cols(data.frame(wl=lambda_range), bb_spectra)
+
+wl_range <- 200:900 #wavelength, in nm
+biref_range <-  seq(0.0005,0.2, 0.0005) #birefringence 
+
+int_spectra <- round(interference(wl_range, biref_range, 6500),2)/2
 colnames(int_spectra) <- biref_range
 int_spectra <- cbind(data.frame(wl = wl_range), int_spectra)
 
-int_rspec <- spec2rgb(int_spectra, alpha=NULL)
+int_rspec <- spec2rgb(as.rspec(int_spectra, lim=c(300, 700)), alpha=NULL)
 int_rspec <- tibble::rownames_to_column(as.data.frame(int_rspec))
 colnames(int_rspec) <- c("biref","hexvis")
 
@@ -75,6 +148,7 @@ int_spectra <- melt(int_spectra, id="wl")%>%
   left_join(int_rspec, by="biref")
 
 write.csv(int_spectra, "int_spectra.csv")
+}
 ```
 
 ```{ojs}
@@ -91,7 +165,7 @@ data_intspec = FileAttachment("int_spectra.csv").csv({ typed: true })
 
 ```{ojs}
 //| label: fig-int_spectra
-//| fig-cap: "Spectral contribution to the observed interference colour as a function of birefringence. Assumes a uniform light source (even spectral distribution). The orders of colours can be counted as the first trough passed by 550 nm. Higher order colours (after 3rd order) oscillate between weak pink-green colours and become increasingly white."
+//| fig-cap: "Spectral contribution to the observed interference colour as a function of birefringence in thin section of 30 μm thickness, calculated using the daylight spectrum (black body radiation at 6500K). Each order of interference colours can be counted as the troughs pass by 551 nm (marked by vertical line). The boundary between 1st and 2nd order colours occurs at a birefringence of 0.018 as the first trough passes this line. Higher order colours (after 3rd order) oscillate between weak pink-green colours and become increasingly washed-out and pale. This spectral curve has been generated in R from first principles and is converted into an estimation of the perceived colour using the pavo 2 package [@Maia2013; @Maia2019]."
 
 Plot.plot({
   x: {label: "Wavelength (nm)"},
@@ -107,6 +181,17 @@ Plot.plot({
     color: "Black"
   },
   marks: [
+    Plot.image([{ url: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Linear_visible_spectrum.svg"}],
+    {
+      x: 565,
+      y: -0.2,
+      width: 383,
+      height: width*0.1,
+      src: "url"
+    }),
+    //Plot.ruleX([380]),
+    //Plot.ruleX([750]),
+    Plot.ruleX([551]),
     Plot.areaY(interference_filtered, { 
       x: "wl", 
       y: "value", 
@@ -125,10 +210,21 @@ interference_filtered = data_intspec.filter(function(intspectra) {
 ```
 :::
 
+### Extinction and Extinction Angles
+As the stage is rotated through 360°, the often bright colours observed will decrease in intensity and will *go dark* every 90° (four times in a full rotation). This is called **extinction**, and occurs when the optic axes of the mineral are aligned with the vibration directions of the upper and lower polarisers. See @Raith2012 pages 82 and 85 for examples. 
 
-### Extinction Angles
+If, when the upper polariser is inserted, the mineral of interest is extinct and remains extinct through the full 360° rotation, then the mineral is possibly in the *isotropic* crystal system. There is a possibility that you have found an *anisotropic* mineral (any other crystal system besides isotropic) oriented such that it is cut in a very specific direction. If the mineral is truly isotropic, *all examples of this mineral* will show isotropic behaviour and will be fully extinct throughout the 360° rotation. 
+
+If there is a crystallographic feature identifiable in the mineral of interest (such as a crystal face of known orientation, a cleaveage trace, or overall shape), then the orientation of the optic axes with respect to the crystallographic axes can be used to determine the symmetry group to which the mineral belongs. 
+
+In general, the mono*clinic* and tri*clinic* crystal classes have extinction angles in*clined* at some angle off of the main crystallographic axes. The remaining classes, tetragonal, orthorhombic, hexagonal and trigonal, tend to have *parallel* extinction. 
+
+For further details, please read @Raith2012 pages 100--102.
 
 ### Twinning
+Twinning is a growth defect where, for whatever reason during crystal growth, the mineral changes growth directions. Twinning occurs along particular crystallographic planes that are specific to each mineral, so the type of twinning is often distinctive. As the crysatallographic orientation of the crystal changes across the twin plane, this is often visible as sudden changes in the direction of extinction angles across the twin plane. 
+
+Example images and further details are in [@Raith2012] on pages 47--50.
 
 ::: {.content-hidden unless-format="html"}
 ## Further concepts
@@ -139,13 +235,13 @@ There are further techniques not covered here, such as obtaining an [:optic figu
 
 We all see the world differently, and this should not be a disadvantage when it comes to microscopy. Due to the different physical interaction properties of light between dyes and inks, LED/LCD computer screens, camera detectors, and how interference colours arise, it is not suprising that dramatic differences in perception of colours often arise between depictions of what is seen down the microscope versus what is actually observed, even in individuals with full colour perception. 
 
-Figure @fig-ishihara9 is an [:Ishihara]() colour perception plate. This is not a faithful reconstruction (due to colour rendering in various digital display technologies) but it is sufficient to illustrate the point here. You should be able to distinguish the number 74. If you see the number 71, or no number at all, then please alert your demonstrator so that we can help provide you with some extra materials and assistance. For instance, instead of using digitally rendered or print copied of the Michel Levy chart, we will provide you with a quartz wedge plate which can be viewed under cross polarised light to use as the true point of reference for the interference colours. 
+Figure @fig-ishihara9 is an [:Ishihara](https://en.wikipedia.org/wiki/Ishihara_test) colour perception plate. This is not a faithful reconstruction (due to colour rendering in various digital display technologies) but it is sufficient to illustrate the point here. You should be able to distinguish the number 74. If you see the number 71, or no number at all, then please alert your demonstrator so that we can help provide you with some extra materials and assistance. For instance, instead of using digitally rendered or print copies of the interference colour chart, we will provide you with a quartz wedge plate which can be viewed under cross polarised light to use as the true point of reference for the interference colours. 
 
 [![Ishihara Plate 9. The number 74 should be visible - please alert your demonstrator if you see the number 71 or no number at all.](Ishihara_9.svg "Ishihara Plate 9"){#fig-ishihara9}]("https://commons.wikimedia.org/wiki/File:Ishihara_9.svg")
 
 ### Sources of Light
 
-An important effect to take note of is how the generation of interference colours under cross polarised light is also a function of the spectral distribution of light interacting with the crystalline material. For the interference colours to behave as we expect them to as a function of birefringence, it is important to use an even a distribution of light as possible. 
+An important effect to take note of is how the generation of interference colours under cross polarised light is also a function of the spectral distribution of light interacting with the crystalline material. For the interference colours to behave as we expect them to, it is important to use an even a distribution of light as possible. 
 
 Modern [:LEDs](https://en.wikipedia.org/wiki/Light-emitting_diode) do not produce a uniform or continuous spectral distribution. Even the [Nobel Prize](https://www.nobelprize.org/prizes/physics/2014/press-release/) winning blue LED and its subsequent combination with Ce-doped [:YAG](https://en.wikipedia.org/wiki/Yttrium_aluminium_garnet) as a yellow phosphor still does not produce a sufficiently uniform spectrum suitable for XPL microscopy. 
 
@@ -154,44 +250,108 @@ As such, our microscopes are equipped with [:halogen bulbs](https://en.wikipedia
 The key message is that the bulbs in your microscopes will produce a significant amount of infrared radiation (i.e., ***heat***). Don't leave them on for long periods unattended. When turning them on and off, it is best to start at low voltage and ramp it up slowly (over a couple of seconds) rather than just turn it on at full voltage. This increases wear on the bulbs, and makes them more likely to blow (which is not good if it happens during an exam).
 
 ```{r, echo=FALSE, message=FALSE}
+if (!file.exists("int_spectra2.csv")) {
+
 library(reshape)
 library(readr)
 library(dplyr)
 library(pavo)
 
 bb <- function(lambda, TK){
-     #Planck's law of black-body radiation, where:
-     #lambda = wavelength (nm)
-     #TK = temperature in Kelvin
-      
-     #convert temp from nm to m
-     lambda <- lambda*1e-9
-     
-     #Constants:
-     c <- 299792458 #speed of light (m/s), SI units
-     h <- 6.626e-34 #plank constant (J/Hz), SI units
-     k <- 1.38e-23 #boltzmann constant (J/K), SI units 
-    
-     radiance <- ((2*h*c^2)/(lambda^5))*(1/(exp((h*c)/(lambda*k*TK))-1))
-     return(radiance)
+  #Planck's law of black-body radiation, where:
+  #lambda = wavelength (nm)
+  #TK = temperature in Kelvin
+  
+  #convert temp from nm to m
+  lambda <- lambda*1e-9
+  
+  #Constants:
+  c <- 299792458 #speed of light (m/s), SI units
+  h <- 6.626e-34 #plank constant (J/Hz), SI units
+  k <- 1.38e-23 #boltzmann constant (J/K), SI units 
+  
+  radiance <- ((2*h*c^2)/(lambda^5))*(1/(exp((h*c)/(lambda*k*TK))-1))
+  return(radiance)
 }
 
 #function to normalise the spectra to range 0:1
 norm_func <- function(x){
-    x<-x/max(x)
-    return(x)
-    }
+  x<-x/max(x)
+  return(x)
+}
 
-# calculate spectra
-TK_range <- seq(1500,10000,100)
+#function to calculate interference colours
+#uses a look-up table calculated from function bb() defined above
+interference <- function(wl, biref, TK){ #function to calculate interference colours for a given black-body radiation curve
+  c <- 299792458 #speed of light (nm/ns), SI units
+  t <- seq(0,0.01,0.00001) #time series
+  thin <- 30000 #thin section thickness, in nm
+  RI <- 1.5 #Refractive Index, using 1.5 as a starting value
+  m <- vector() #create empty matrix
+  for(b in biref){
+    RId <- RI+b #maximum RI
+    Retd <- (((thin*RId)/425)-((thin*RI)/425))*425 #using 425nm as wavelength
+    n <- vector() #create empty vector
+    for(l in wl){#for each wavelength;
+      f <- (c/l)/1e3 #convert to frequency, in THz
+      phi <- 2*pi*(Retd/l) #Retardation, in multiples of pi/2 (half wavelengths)
+      n <- c(n, #append to stored vector the:
+             (max(sin(2*pi*f*t)- #max of difference between the O-wave
+                    sin((2*pi*f*t)-phi))*#and the E-wave
+                bb_spectra[which(rownames(bb_spectra)==l),which(colnames(bb_spectra)==TK)]
+              #normalised to bb-radiation curve
+             ))
+    }
+    m <- cbind(m, n)
+  }
+  
+  return(m)
+  
+}
+
+# calculate bb_spectra lookup table
+TK_range <- seq(2500,7500,500)
 lambda_range <- seq(200,900)
 
 bb_spectra <- data.frame(outer(lambda_range, TK_range, bb))%>%
   transmute(across(everything(), norm_func))
 colnames(bb_spectra) <- c(TK_range)
-bb_spectra <- bind_cols(data.frame(wl=lambda_range), bb_spectra)
+rownames(bb_spectra) <- c(lambda_range)
 
-# calculate rgb spectral perception
+#Calculate birefringence curves and their spectral colour
+wl_range <- 200:900 #wavelength, in nm
+biref_range <-  seq(0.001,0.055, 0.001) #birefringence
+
+int_spectra <- data.frame()
+for(tempK in TK_range){
+  int_spectra <- rbind(int_spectra, 
+                  cbind(tempK,
+                    round(interference(wl_range, biref_range, tempK),2)/2))
+}
+colnames(int_spectra) <- c("TK", biref_range)
+int_spectra <- cbind(data.frame(wl = wl_range), int_spectra)
+
+int_spectra_list <- split(int_spectra, int_spectra$TK)
+colour_table <- data.frame()
+for(l in int_spectra_list){
+int_rspec <- spec2rgb(as.rspec(l[,-2], lim=c(300, 700)), alpha=NULL)
+int_rspec <- tibble::rownames_to_column(as.data.frame(int_rspec))%>%
+  cbind(l$TK[1])
+colnames(int_rspec) <- c("biref","hexvis","temperature")
+colour_table <- rbind(colour_table, int_rspec)
+}
+
+# build csv file for plotting in ojs
+
+int_spectra <- melt(int_spectra, id=c("wl","TK"))%>%
+  dplyr::rename(biref = variable, temperature = TK)%>%
+  left_join(colour_table)
+
+write.csv(int_spectra, "int_spectra2.csv")
+
+
+# calculate rgb spectral perception for black body radiation curves
+bb_spectra <- bind_cols(data.frame(wl=lambda_range), bb_spectra)
 bb_rspec <- as.rspec(bb_spectra, lim = c(300, 700))
 bb_colours <- spec2rgb(bb_rspec, alpha=NULL)
 bb_colours <- tibble::rownames_to_column(as.data.frame(bb_colours))
@@ -206,24 +366,30 @@ bb_spectra <- melt(bb_spectra, id="wl")%>%
   left_join(bb_colours, by="temperature")
 
 write.csv(bb_spectra, "bb_spectra.csv")
+}
 
 ```
 
 ```{ojs}
 //| panel: input
 viewof TempK = Inputs.range(
-  [1500, 10000], 
-  {value: 1700, step: 100, label: "Temperature (K):"}
+  [2500, 7500], 
+  {value: 2500, step: 500, label: "Temperature (K):"}
+)
+viewof biref2 = Inputs.range(
+  [0.001, 0.055], 
+  {value: 0.01, step: 0.001, label: "Birefringence:"}
 )
 ```
 
 ```{ojs}
 data_bbspec = FileAttachment("bb_spectra.csv").csv({ typed: true })
+data_intspec2 = FileAttachment("int_spectra2.csv").csv({ typed: true })
 ```
 
 ```{ojs}
 //| label: fig-bb_spectra
-//| fig-cap: "Relative spectral distribution of emissions for Black Body Radiation at a given Temperature. The display colour of the curve approximates the perceived colour of this spectrum by the human eye. Compare the spectral output for a Halogen bulb at 3000K vs Daylight at 6500K"
+//| fig-cap: "Top: Relative spectral distribution of emissions for Black Body Radiation at a given Temperature. The display colour of the curve approximates the perceived colour of this spectrum by the human eye. Compare the spectral output for a Halogen bulb around 3000K to 3500K vs Daylight at 6500K. Bottom: The same curve with interference calculated as a function of birefringence. Notice how the interference colours can appear different depending on the intial spectrum of light. These spectral curves have been generated in R from first principles and are converted into an estimation of the perceived colour using the pavo 2 package [@Maia2013; @Maia2019]." 
 
 Plot.plot({
   x: {label: "Wavelength (nm)"},
@@ -257,13 +423,39 @@ Plot.plot({
   width: 800
 })
 
+Plot.plot({
+  x: {label: "Wavelength (nm)"},
+  y: {
+    label: "Relative Intensity",
+    labelOffset: 0},
+  margin: 40,
+  marginBottom: 80,
+  style: {
+    background: "#CCCCCC",
+    fontSize: 20,
+    color: "Black"
+  },
+  marks: [
+      Plot.areaY(filtered2, { 
+      x: "wl", 
+      y: "value", 
+      fill: "hexvis"})
+      
+      ],
+  width: 800
+})
+
 ```
 
 ```{ojs}
 filtered = data_bbspec.filter(function(bbspectra) {
   return TempK == bbspectra.temperature;
 })
+filtered2 = data_intspec2.filter(function(intspectra2) {
+  return TempK == intspectra2.temperature && biref2 == intspectra2.biref;
+})
 
 ```
 
 :::
+

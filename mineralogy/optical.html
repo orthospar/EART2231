@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.242">
+<meta name="generator" content="quarto-1.3.124">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -18,10 +18,9 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -48,19 +47,48 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
+    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging-indent div.csl-entry {
+.hanging div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -74,7 +102,8 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}</style>
+}
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -127,16 +156,11 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../mineralogy.html">Mineralogy</a></li><li class="breadcrumb-item"><a href="../mineralogy/optical.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Optical properties of minerals</span></a></li></ol></nav>
-      <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Optical properties of minerals</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
       </button>
     </div>
   </nav>
@@ -144,39 +168,36 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Applied Mineralogy and Petrology</a> 
         <div class="sidebar-tools-main">
-    <a href="../EART2231_IntroMinPet.epub" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <a href="../EART2231_IntroMinPet.epub" title="Download ePub" class="sidebar-tool px-1"><i class="bi bi-journal"></i></a>
+  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
+      <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-        </div>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome</span></a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link">Welcome</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+  <a href="../intro.html" class="sidebar-item-text sidebar-link">Preface</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Quick Access</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Quick Access</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -184,16 +205,14 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../quick_access/setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Microscope Setup and Use Reminders</span></a>
+  <a href="../quick_access/setup.html" class="sidebar-item-text sidebar-link">Microscope Setup and Use Reminders</a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../mineralogy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mineralogy</span></a>
+            <a href="../mineralogy.html" class="sidebar-item-text sidebar-link">Mineralogy</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -201,20 +220,17 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mineralogy/physical.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Physical properties of minerals</span></a>
+  <a href="../mineralogy/physical.html" class="sidebar-item-text sidebar-link">Physical properties of minerals</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mineralogy/crystallography.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Crystallography</span></span></a>
+  <a href="../mineralogy/crystallography.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Crystallography</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mineralogy/optical.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Optical properties of minerals</span></span></a>
+  <a href="../mineralogy/optical.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Optical properties of minerals</span></a>
   </div>
 </li>
       </ul>
@@ -222,7 +238,6 @@ div.csl-indent {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -240,7 +255,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Optical properties of minerals</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Optical properties of minerals</span></h1>
 </div>
 
 
@@ -315,7 +330,10 @@ div.csl-indent {
 <p>The upper polarisation plate (the anlyser) is oriented perpendicular to the orienation direction of the lower polarisation plate. Since the lower polariser is, by convention, orientated in an E-W direction (or left-right), the upper polariser is hence oriented in a N-S direction (or up-down). If no thin section is inserted, then the view through the oculars should be <strong>dark/black</strong>.</p>
 <section id="birefringence" class="level3">
 <h3 class="anchored" data-anchor-id="birefringence">Birefringence</h3>
-<p>Upon insertion of the upper polarisation plate (the analyser) the most striking observation is the sudden bright colourful display of <a href="https://en.wikipedia.org/wiki/Interference_colour_chart">:Interference Colours</a>, particularly in minerals such as olivine. Interference colours are only visible in <em>anisotropic minerals</em> and arise as a function of thin section thickness and the <a href="https://en.wikipedia.org/wiki/Birefringence">:Birefringence</a> of the mineral. Using a Michel-Lévy chart or the newer Raith-Sørensen chart (pages 92 and 93 of <span class="citation" data-cites="Raith2012">Raith, Raase, and Reinhardt (<a href="#ref-Raith2012" role="doc-biblioref">2012</a>)</span>), the maximum birefringence of a mineral can be identified by matching the observed interference colour. The maximum birefringes is characteristic for many minerals, and allows further descrimination between possible candidates.</p>
+<p>Upon insertion of the upper polarisation plate (the analyser) the most striking observation is the sudden bright colourful display of <a href="https://en.wikipedia.org/wiki/Interference_colour_chart">:Interference Colours</a>, particularly in minerals such as olivine. Interference colours are only visible in <em>anisotropic minerals</em> and arise as a function of thin section thickness and the <a href="https://en.wikipedia.org/wiki/Birefringence">:Birefringence</a> of the mineral. Using a Michel-Lévy chart or the newer Raith-Sørensen chart (pages 92 and 93 of <span class="citation" data-cites="Raith2012">Raith, Raase, and Reinhardt (<a href="#ref-Raith2012" role="doc-biblioref">2012</a>)</span>), the maximum birefringence of a mineral can be identified by matching the observed interference colour. The maximum birefringence is characteristic for many minerals, and allows further descrimination between possible candidates.</p>
+<div class="cell">
+
+</div>
 <div class="cell panel-input card bg-light p-2">
 <div class="sourceCode cell-code hidden" id="cb1" data-startfrom="155" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 154;"><span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>viewof biref <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>(</span>
 <span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>  [<span class="fl">0.0005</span><span class="op">,</span> <span class="fl">0.14</span>]<span class="op">,</span> </span>
@@ -423,6 +441,9 @@ div.csl-indent {
 <p>Modern <a href="https://en.wikipedia.org/wiki/Light-emitting_diode">:LEDs</a> do not produce a uniform or continuous spectral distribution. Even the <a href="https://www.nobelprize.org/prizes/physics/2014/press-release/">Nobel Prize</a> winning blue LED and its subsequent combination with Ce-doped <a href="https://en.wikipedia.org/wiki/Yttrium_aluminium_garnet">:YAG</a> as a yellow phosphor still does not produce a sufficiently uniform spectrum suitable for XPL microscopy.</p>
 <p>As such, our microscopes are equipped with <a href="https://en.wikipedia.org/wiki/Halogen_lamp">:halogen bulbs</a>, a modification to the standard tungsten-filament incandescent bulbs of the 20th Century. Yes, it’s old-tech, but it’s what we have. Notice in Figure <a href="#fig-bb_spectra">Figure&nbsp;<span>2.3</span></a> that the light emitted from these bulbs is still skewed towards the yellow-red side of the spectrum. The microscopes compensate for this by filtering some of the yellow-red light to even out the distribution a little and make the general spectrum more ‘white’.</p>
 <p>The key message is that the bulbs in your microscopes will produce a significant amount of infrared radiation (i.e., <strong><em>heat</em></strong>). Don’t leave them on for long periods unattended. When turning them on and off, it is best to start at low voltage and ramp it up slowly (over a couple of seconds) rather than just turn it on at full voltage. This increases wear on the bulbs, and makes them more likely to blow (which is not good if it happens during an exam).</p>
+<div class="cell">
+
+</div>
 <div class="cell panel-input card bg-light p-2">
 <div class="sourceCode cell-code hidden" id="cb5" data-startfrom="375" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 374;"><span id="cb5-375"><a href="#cb5-375" aria-hidden="true" tabindex="-1"></a>viewof TempK <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>(</span>
 <span id="cb5-376"><a href="#cb5-376" aria-hidden="true" tabindex="-1"></a>  [<span class="dv">2500</span><span class="op">,</span> <span class="dv">7500</span>]<span class="op">,</span> </span>
@@ -560,14 +581,14 @@ div.csl-indent {
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-Maia2013" class="csl-entry" role="listitem">
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-Maia2013" class="csl-entry" role="doc-biblioentry">
 Maia, Rafael, Chad M. Eliason, Pierre-Paul Bitton, Stéphanie M. Doucet, and Matthew D. Shawkey. 2013. <span>“<span class="nocase">pavo</span>: An <span>R</span> Package for the Analysis, Visualization and Organization of Spectral Data.”</span> <em>Methods in Ecology and Evolution</em> 4 (10): 906–13. <a href="https://doi.org/10.1111/2041-210x.12069">https://doi.org/10.1111/2041-210x.12069</a>.
 </div>
-<div id="ref-Maia2019" class="csl-entry" role="listitem">
+<div id="ref-Maia2019" class="csl-entry" role="doc-biblioentry">
 Maia, Rafael, Hugo Gruson, John A. Endler, and Thomas E. White. 2019. <span>“<span class="nocase">pavo</span> 2: New Tools for the Spectral and Spatial Analysis of Colour in <span>R</span>.”</span> <em>Methods in Ecology and Evolution</em> 10 (7): 1097–107. <a href="https://doi.org/10.1111/2041-210x.13174">https://doi.org/10.1111/2041-210x.13174</a>.
 </div>
-<div id="ref-Raith2012" class="csl-entry" role="listitem">
+<div id="ref-Raith2012" class="csl-entry" role="doc-biblioentry">
 Raith, Michael M., Peter Raase, and Jürgen Reinhardt. 2012. <em>Guide to Thin Section Microscopy</em>. Mineralogical Society of America.
 </div>
 </div>
@@ -728,23 +749,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
+    target: function(trigger) {
+      return trigger.previousElementSibling;
     }
   });
   clipboard.on('success', function(e) {
